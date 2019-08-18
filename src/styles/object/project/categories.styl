@@ -1,0 +1,32 @@
+
+
+
+clearfix()
+  +cache('clearfix')
+    &::after
+      content ''
+      display block
+      clear both
+
+#content-area
+  position: relative
+  clear: both
+  // background: #87dcff url(../images/bg01.jpg) 50% 0 repeat-x;
+  & > *
+    box-sizing: border-box
+
+  .sec-inner
+    position: relative
+    // z-index: 70
+
+#player
+  width: 100%
+  height 360px
+
+
+.sec-inner
+  width: 100%
+  max-width: 750px
+  margin: auto
+
+

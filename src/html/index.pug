@@ -30,12 +30,19 @@ block main
 
     | #{"\n"}
     //{* コンテンツエリア *}
-    div(style='text-align:center;min-height:500px;')
-      p コンテンツエリア
-      p.pc
-        |pcクラスをつけるとPCのみ表示されます。
-      p.spn
-        |spnクラスをつけるとSPNのみ表示されます。
+    article#content-area
+
+      .sec-inner
+        // KV
+        #player(data-module="movie")
+          //- iframe(width="560" height="315" src="https://www.youtube.com/embed/bjmBJ1Fl0cs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="")
+
+      //- div(style='text-align:center;min-height:500px;')
+      //-   p コンテンツエリア
+      //-   p.pc
+      //-     |pcクラスをつけるとPCのみ表示されます。
+      //-   p.spn
+      //-     |spnクラスをつけるとSPNのみ表示されます。
     //{* /コンテンツエリア *}
 
     | #{"\n"}
