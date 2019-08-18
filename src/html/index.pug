@@ -1,12 +1,52 @@
 extend _template
 
 block vars
-  - title = 'xxx'
-  - description = 'xxx'
-  - keywords = 'xxx'
-  - img = 'http://localhost:3000/assets/images/share/ogp.jpg'
-  - url = 'http://localhost:3000'
+  - title = '東京ディズニーリゾート'
+  - description = ''
+  - keywords = ''
+  - img = ''
+  - url = ''
 
 block main
-  div(data-module='dummy' data-options='{ "dummy_opt": "dummy" }') Click me!
-  div(data-module='legacy') Legacy!
+  //- div(data-module='dummy' data-options='{ "dummy_opt": "dummy" }') Click me!
+  //- div(data-module='legacy') Legacy!
+
+  | #{"\n"}
+  .wrap
+    //{* ヘッダーインクルード *}
+    //#include virtual="/ssi/header_event_ps_inc.html"
+    //{* /ヘッダーインクルード *}
+    | #{"\n"}
+    .contents-inner.breadcrumb_area.pc
+      //{* ここにパンくずを入れてください PC *}
+      .breadcrumb
+        ul.inner
+          li
+            span.text-buttons.text-buttons-s
+              a(href='/top.html') TOP
+          li.current
+            span ページタイトル
+      //{* /ここにパンくずを入れてください PC *}
+
+    | #{"\n"}
+    //{* コンテンツエリア *}
+    div(style='text-align:center;min-height:500px;')
+      p コンテンツエリア
+      p.pc
+        |pcクラスをつけるとPCのみ表示されます。
+      p.spn
+        |spnクラスをつけるとSPNのみ表示されます。
+    //{* /コンテンツエリア *}
+
+    | #{"\n"}
+    //{* フッターインクルード *}
+    //#include virtual="/ssi/footer_event_ps_inc.html"
+    //{* /フッターインクルード *}
+  // /.wrap 
+
+  | #{"\n"}
+  //{* 計測用ADPLAN タグ *}
+  //#include virtual="/ssi/adplan_inc.html" 
+  //{* /計測用ADPLAN タグ *}
+  | #{"\n"}
+
