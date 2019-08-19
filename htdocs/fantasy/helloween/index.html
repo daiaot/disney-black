@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>東京ディズニーリゾート</title>
+    <meta name="title" content="東京ディズニーリゾート">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="/css/reset.css">
+    <!--{* PCSP用css *}-->
+    <!--{* PCSP用js *}-->
+    <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+
+    <div class="wrap">
+      <!--{* ヘッダーインクルード *}-->
+      <!--#include virtual="/ssi/header_event_ps_inc.html"-->
+      <!--{* /ヘッダーインクルード *}-->
+
+      <div class="contents-inner breadcrumb_area pc">
+        <!--{* ここにパンくずを入れてください PC *}-->
+        <div class="breadcrumb">
+          <ul class="inner">
+            <li><span class="text-buttons text-buttons-s"><a href="/top.html">TOP</a></span></li>
+            <li class="current"><span>ページタイトル</span></li>
+          </ul>
+        </div>
+        <!--{* /ここにパンくずを入れてください PC *}-->
+      </div>
+
+      <!--{* コンテンツエリア *}-->
+      <article id="content-area">
+        <div class="sec-inner">
+          <!-- KV-->
+          <div class="sec-block">
+            <div class="youtube_wrap">
+              <div class="youtube">
+                <div id="player" data-module="movie"></div>
+              </div>
+            </div>
+          </div>
+          <div class="sec-block">
+            <div class="slide_wrap" data-module="slider">
+              <div class="slide_wrap__image"><img src="images/img_slide_01.jpg" alt=""></div>
+              <div class="slide_wrap__image"><img src="images/img_slide_02.jpg" alt=""></div>
+              <div class="slide_wrap__image"><img src="images/img_slide_03.jpg" alt=""></div>
+            </div>
+          </div>
+          <div class="sec-block">
+            <div class="gallery_wrap" data-module="showMore">
+              <ul class="gallery_wrap__lists">
+                <li><img src="images/img_thumb_01.jpg" alt=""></li>
+                <li><img src="images/img_thumb_02.jpg" alt=""></li>
+                <li><img src="images/img_thumb_03.jpg" alt=""></li>
+                <li><img src="images/img_thumb_04.jpg" alt=""></li>
+                <li><img src="images/img_thumb_05.jpg" alt=""></li>
+                <li><img src="images/img_thumb_06.jpg" alt=""></li>
+                <li><img src="images/img_thumb_07.jpg" alt=""></li>
+                <li><img src="images/img_thumb_08.jpg" alt=""></li>
+                <li><img src="images/img_thumb_09.jpg" alt=""></li>
+              </ul>
+              <div class="btn--showmore">SHOW MORE</div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!--{* /コンテンツエリア *}-->
+
+      <!--{* フッターインクルード *}-->
+      <!--#include virtual="/ssi/footer_event_ps_inc.html"-->
+      <!--{* /フッターインクルード *}-->
+    </div>
+    <!-- /.wrap -->
+
+    <!--{* 計測用ADPLAN タグ *}-->
+    <!--#include virtual="/ssi/adplan_inc.html" -->
+    <!--{* /計測用ADPLAN タグ *}-->
+
+    <script src="js/app.js"></script>
+
+  </body>
+</html>
