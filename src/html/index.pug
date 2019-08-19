@@ -34,10 +34,21 @@ block main
 
       .sec-inner
         // KV
-        .youtube_wrap
-          .youtube
-            #player(data-module="movie")
-            //- iframe(width="560" height="315" src="https://www.youtube.com/embed/bjmBJ1Fl0cs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="")
+        .sec-block
+          .youtube_wrap
+            .youtube
+              #player(data-module="movie")
+              //- iframe(width="560" height="315" src="https://www.youtube.com/embed/bjmBJ1Fl0cs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="")
+
+        .sec-block
+          .slide_wrap(data-module='slider')
+            .slide_wrap__image
+              img(src=`images/img_slide_01.jpg` alt="")
+            .slide_wrap__image
+              img(src=`images/img_slide_02.jpg` alt="")
+            .slide_wrap__image
+              img(src=`images/img_slide_03.jpg` alt="")
+
 
       //- div(style='text-align:center;min-height:500px;')
       //-   p コンテンツエリア

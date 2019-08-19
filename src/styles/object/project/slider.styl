@@ -1,0 +1,62 @@
+
+.slide_wrap
+  width 100%
+
+.slick-dots
+  // list-style-type none
+  // text-align center
+  // display flex
+  position absolute
+  bottom -40px
+  display block
+  width 100%
+  padding 0
+  margin 0
+  list-style none
+  text-align center
+
+  li
+    // display inline
+    position relative
+    display inline-block
+    width 40px
+    height 40px
+    margin 0 5px
+    padding 0
+    cursor pointer
+
+    &.slick-active
+      button:before
+        color #f00
+
+    button
+      font-size 0
+      line-height 0
+      display block
+      width 40px
+      height 40px
+      padding 5px
+      cursor pointer
+      color transparent
+      border 0
+      outline none
+      background transparent
+
+      &:before
+        font-size 20px
+        line-height 40px
+        position absolute
+        top 0
+        left 0
+        width 40px
+        height 40px
+        content '●'
+        text-align center
+        opacity 0.25
+        color black
+        -webkit-font-smoothing antialiased
+        -moz-osx-font-smoothing grayscale
+
+.slick-slide
+  img
+    width 100%
