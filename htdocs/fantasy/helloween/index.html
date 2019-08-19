@@ -9,7 +9,9 @@
     <meta name="keywords" content="">
     <link rel="stylesheet" href="/css/reset.css">
     <!--{* PCSP用css *}-->
+    <link rel="stylesheet" href="/ssi/css/event_ps.css" type="text/css">
     <!--{* PCSP用js *}-->
+    <script type="text/javascript" src="/ssi/js/event_ps.js"></script>
     <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
     <link rel="stylesheet" href="css/app.css">
   </head>
@@ -17,7 +19,105 @@
 
     <div class="wrap">
       <!--{* ヘッダーインクルード *}-->
-      <!--#include virtual="/ssi/header_event_ps_inc.html"-->
+      <header class="vendor" id="header" role="banner">
+        <div class="header-inner">
+          <div class="header-top">
+            <div class="logo logo-ja"><a href="https://www.tokyodisneyresort.jp/top.html" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_jp', label: '1段目_ロゴ'}});">TOKYO DISNEY RESORT</a></div>
+            <div class="logo logo-en"><a href="https://www.tokyodisneyresort.jp/en/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_en', label: '1段目_ロゴ'}});">TOKYO DISNEY RESORT</a></div>
+            <div class="logo logo-sc"><a href="https://www.tokyodisneyresort.jp/sc/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_sc', label: '1段目_ロゴ'}});">TOKYO DISNEY RESORT</a></div>
+            <div class="logo logo-tc"><a href="https://www.tokyodisneyresort.jp/tc/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_tc', label: '1段目_ロゴ'}});">TOKYO DISNEY RESORT</a></div>
+            <div class="logo logo-kr"><a href="https://www.tokyodisneyresort.jp/kr/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_kr', label: '1段目_ロゴ'}});">TOKYO DISNEY RESORT</a></div>
+            <div class="logo logo-th"><a href="https://www.tokyodisneyresort.jp/th/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_th', label: '1段目_ロゴ'}});">TOKYO DISNEY RESORT</a></div>
+            <div class="logo logo-id"><a href="https://www.tokyodisneyresort.jp/id/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_id', label: '1段目_ロゴ'}});">TOKYO DISNEY RESORT</a></div>
+            <div class="btn-language js-languagemenu"><span>Language</span></div>
+            <div class="languagemenu">
+              <div class="modalBtnClose"><span>×</span></div>
+              <ul>
+                <li class="change-ja"><a href="https://www.tokyodisneyresort.jp/top.html">日本語</a></li>
+                <li class="change-en"><a href="https://www.tokyodisneyresort.jp/en/">English</a></li>
+                <li class="change-sc"><a href="https://www.tokyodisneyresort.jp/sc/">簡体中文</a></li>
+                <li class="change-tc"><a href="https://www.tokyodisneyresort.jp/tc/">繁体中文</a></li>
+                <li class="change-kr"><a href="https://www.tokyodisneyresort.jp/kr/">한국어</a></li>
+                <li class="change-th"><a href="https://www.tokyodisneyresort.jp/th/">ภาษาไทย</a></li>
+                <li class="change-id"><a href="https://www.tokyodisneyresort.jp/id/">Bahasa Indonesia</a></li>
+              </ul>
+              <div class="modalBtnClose_sp">
+                <span class="modalBtnClose-ja">閉じる</span>
+                <span class="modalBtnClose-en">Close</span>
+                <span class="modalBtnClose-sc">关闭</span>
+                <span class="modalBtnClose-tc">關閉</span>
+                <span class="modalBtnClose-kr">닫기</span>
+                <span class="modalBtnClose-th">คลิกเพื่อซ่อนข้อความ</span>
+                <span class="modalBtnClose-id">Tutup</span>
+              </div>
+            </div>
+          </div>
+          <div class="header-globalmenu">
+            <!-- ja -->
+            <ul class="globalmenu-ja">
+              <li class="gmenu-tdr"><a href="https://www.tokyodisneyresort.jp/top.html" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_jp', label: '1段目_HOME'}});"><span>HOME</span></a></li>
+              <li class="gmenu-tdl"><a href="http://www.tokyodisneyresort.jp/tdl/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_jp', label: '1段目_東京ディズニーランド'}});"><span class="mobile-low2">東京<br class="mobile-block">ディズニーランド</span></a></li>
+              <li class="gmenu-tds"><a href="http://www.tokyodisneyresort.jp/tds/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_jp', label: '1段目_東京ディズニーシー'}});"><span class="mobile-low2">東京<br class="mobile-block">ディズニーシー</span></a></li>
+              <li class="gmenu-hotel"><a href="https://www.tokyodisneyresort.jp/hotel/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_jp', label: '1段目_ホテル'}});"><span>ホテル</span></a></li>
+              <li class="gmenu-reserve"><a href="https://reserve.tokyodisneyresort.jp/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_jp', label: '1段目_予約/購入'}});"><span>予約 / 購入</span></a></li>
+            </ul><!-- /ja -->
+      
+            <!-- en -->
+            <ul class="globalmenu-en">
+              <li class="gmenu-tdr"><a href="https://www.tokyodisneyresort.jp/en/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_en', label: '1段目_HOME'}});"><span>Top Page</span></a></li>
+              <li class="gmenu-tdl"><a href="https://www.tokyodisneyresort.jp/en/tdl/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_en', label: '1段目_東京ディズニーランド'}});"><span class="mobile-low2">Tokyo <br class="mobile-block">Disneyland</span></a></li>
+              <li class="gmenu-tds"><a href="https://www.tokyodisneyresort.jp/en/tds/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_en', label: '1段目_東京ディズニーシー'}});"><span class="mobile-low2">Tokyo <br class="mobile-block">DisneySea</span></a></li>
+              <li class="gmenu-hotel"><a href="https://www.tokyodisneyresort.jp/en/hotel/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_en', label: '1段目_ホテル'}});"><span>Hotels</span></a></li>
+              <li class="gmenu-reserve"><a href="https://reserve.tokyodisneyresort.jp/en/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_en', label: '1段目_予約/購入'}});"><span class="low2">Reservations<br>&amp; Tickets</span></a></li>
+            </ul><!-- /en -->
+      
+            <!-- sc -->
+            <ul class="globalmenu-sc">
+              <li class="gmenu-tdr"><a href="https://www.tokyodisneyresort.jp/sc/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_sc', label: '1段目_HOME'}});"><span>首页</span></a></li>
+              <li class="gmenu-tdl"><a href="https://www.tokyodisneyresort.jp/sc/tdl/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_sc', label: '1段目_東京ディズニーランド'}});"><span class="mobile-low2">东京<br class="mobile-block">迪士尼乐园</span></a></li>
+              <li class="gmenu-tds"><a href="https://www.tokyodisneyresort.jp/sc/tds/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_sc', label: '1段目_東京ディズニーシー'}});"><span class="mobile-low2">东京<br class="mobile-block">迪士尼海洋</span></a></li>
+              <li class="gmenu-hotel"><a href="https://www.tokyodisneyresort.jp/sc/hotel/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_sc', label: '1段目_ホテル'}});"><span>饭店</span></a></li>
+              <li class="gmenu-reserve"><a href="https://reserve.tokyodisneyresort.jp/en/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_sc', label: '1段目_予約/購入'}});"><span>网上预约＆购票</span></a></li>
+            </ul><!-- /sc -->
+      
+            <!-- tc -->
+            <ul class="globalmenu-tc">
+              <li class="gmenu-tdr"><a href="https://www.tokyodisneyresort.jp/tc/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_tc', label: '1段目_HOME'}});"><span>東京迪士尼度假區</span></a></li>
+              <li class="gmenu-tdl"><a href="https://www.tokyodisneyresort.jp/tc/tdl/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_tc', label: '1段目_東京ディズニーランド'}});"><span class="mobile-low2">東京<br class="mobile-block">迪士尼樂園</span></a></li>
+              <li class="gmenu-tds"><a href="https://www.tokyodisneyresort.jp/tc/tds/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_tc', label: '1段目_東京ディズニーシー'}});"><span class="mobile-low2">東京<br class="mobile-block">迪士尼海洋</span></a></li>
+              <li class="gmenu-hotel"><a href="https://www.tokyodisneyresort.jp/tc/hotel/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_tc', label: '1段目_ホテル'}});"><span>飯店住宿</span></a></li>
+              <li class="gmenu-reserve"><a href="https://reserve.tokyodisneyresort.jp/en/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_tc', label: '1段目_予約/購入'}});"><span>線上預約＆購票</span></a></li>
+            </ul><!-- /tc -->
+      
+            <!-- kr -->
+            <ul class="globalmenu-kr">
+              <li class="gmenu-tdr"><a href="https://www.tokyodisneyresort.jp/kr/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_kr', label: '1段目_HOME'}});"><span>HOME</span></a></li>
+              <li class="gmenu-tdl"><a href="https://www.tokyodisneyresort.jp/kr/tdl/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_kr', label: '1段目_東京ディズニーランド'}});"><span class="mobile-low2">도쿄<br class="mobile-block">디즈니랜드</span></a></li>
+              <li class="gmenu-tds"><a href="https://www.tokyodisneyresort.jp/kr/tds/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_kr', label: '1段目_東京ディズニーシー'}});"><span class="mobile-low2">도쿄<br class="mobile-block">디즈니씨</span></a></li>
+              <li class="gmenu-hotel"><a href="https://www.tokyodisneyresort.jp/kr/hotel/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_kr', label: '1段目_ホテル'}});"><span>호텔</span></a></li>
+              <li class="gmenu-reserve"><a href="https://reserve.tokyodisneyresort.jp/en/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_kr', label: '1段目_予約/購入'}});"><span>예약/예매</span></a></li>
+            </ul><!-- /kr -->
+      
+            <!-- th -->
+            <ul class="globalmenu-th">
+              <li class="gmenu-tdr"><a href="https://www.tokyodisneyresort.jp/th/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_th', label: '1段目_HOME'}});"><span class="low2">โตเกียวดิสนีย์รีสอร์ท<br>Top Page</span></a></li>
+              <li class="gmenu-tdl"><a href="https://www.tokyodisneyresort.jp/th/tdl/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_th', label: '1段目_東京ディズニーランド'}});"><span class="mobile-low2">โตเกียว<br class="mobile-block">ดิสนีย์แลนด์</span></a></li>
+              <li class="gmenu-tds"><a href="https://www.tokyodisneyresort.jp/th/tds/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_th', label: '1段目_東京ディズニーシー'}});"><span class="mobile-low2">โตเกียว<br class="mobile-block">ดิสนีย์ซี</span></a></li>
+              <li class="gmenu-hotel"><a href="https://www.tokyodisneyresort.jp/th/hotel/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_th', label: '1段目_ホテル'}});"><span>โรงแรม</span></a></li>
+              <li class="gmenu-reserve"><a href="https://reserve.tokyodisneyresort.jp/en/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_th', label: '1段目_予約/購入'}});"><span class="low2">สำรองที่พัก/<br>ซื้อบัตรทางออนไลน์</span></a></li>
+            </ul><!-- /th -->
+      
+            <!-- id -->
+            <ul class="globalmenu-id">
+              <li class="gmenu-tdr"><a href="https://www.tokyodisneyresort.jp/id/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_id', label: '1段目_HOME'}});"><span>BERANDA</span></a></li>
+              <li class="gmenu-tdl"><a href="https://www.tokyodisneyresort.jp/id/tdl/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_id', label: '1段目_東京ディズニーランド'}});"><span class="mobile-low2">Tokyo <br class="mobile-block">Disneyland</span></a></li>
+              <li class="gmenu-tds"><a href="https://www.tokyodisneyresort.jp/id/tds/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_id', label: '1段目_東京ディズニーシー'}});"><span class="mobile-low2">Tokyo <br class="mobile-block">DisneySea</span></a></li>
+              <li class="gmenu-hotel"><a href="https://www.tokyodisneyresort.jp/id/hotel/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_id', label: '1段目_ホテル'}});"><span>Hotel</span></a></li>
+              <li class="gmenu-reserve"><a href="https://reserve.tokyodisneyresort.jp/en/" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'renewal2018', action: 'globalnavi_click_id', label: '1段目_予約/購入'}});"><span class="low2">Reservasi /<br>Pembelian</span></a></li>
+            </ul><!-- /id -->
+          </div>
+        </div>
+      </header>
       <!--{* /ヘッダーインクルード *}-->
 
       <div class="contents-inner breadcrumb_area pc">
@@ -71,12 +171,93 @@
 
       <!--{* フッターインクルード *}-->
       <!--#include virtual="/ssi/footer_event_ps_inc.html"-->
+      <footer class="local-footer" id="footer" role="contentinfo">
+        <div class="inner">
+          <div class="footer-content">
+            <nav class="navigation" role="navigation">
+              <!-- ja -->
+              <ul class="footer-ja">
+                <li><a href="https://www.tokyodisneyresort.jp/sitemap.html" target="_blank">サイトマップ</a></li>
+                <li><a href="https://www.tokyodisneyresort.jp/privacy.html" target="_blank">プライバシーポリシー</a></li>
+                <li><a href="https://www.tokyodisneyresort.jp/legal.html" target="_blank">法的制約と使用条件</a></li>
+                <li><a href="https://www.tokyodisneyresort.jp/legalnotice.html" target="_blank">著作権・商標</a></li>
+                <li><a href="http://www.olc.co.jp/index.html" target="_blank">株式会社オリエンタルランド</a></li>
+              </ul><!-- /ja -->
+      
+              <!-- en -->
+              <ul class="footer-en">
+                <li><a href="https://www.tokyodisneyresort.jp/en/sitemap.html" target="_blank">Site Map</a></li>
+                <li><a href="https://www.tokyodisneyresort.jp/en/privacy.html" target="_blank">Privacy Policy</a></li>
+                <li><a href="https://www.tokyodisneyresort.jp/en/legal.html" target="_blank">Legal Restrictions &amp; Terms of Use</a></li>
+                <li><a href="https://www.tokyodisneyresort.jp/en/legalnotice.html" target="_blank">Copyright / trademark</a></li>
+                <li><a href="http://www.olc.co.jp/en/index.html" target="_blank">Oriental Land Co., Ltd.</a></li>
+              </ul><!-- /en -->
+      
+              <!-- sc -->
+              <ul class="footer-sc">
+                <li><a href="https://www.tokyodisneyresort.jp/sc/sitemap.html" target="_blank">网站地图</a></li>
+                <li><a href="https://www.tokyodisneyresort.jp/sc/privacy.html" target="_blank">隐私政策（英文）</a></li>
+                <li><a href="https://www.tokyodisneyresort.jp/sc/legal.html" target="_blank">法律条款</a></li>
+                <li><a href="https://www.tokyodisneyresort.jp/sc/legalnotice.html" target="_blank">版权/商标</a></li>
+                <li><a href="http://www.olc.co.jp/en/index.html" target="_blank">Oriental Land Co., Ltd.（英文）</a></li>
+              </ul><!-- /sc -->
+      
+              <!-- tc -->
+              <ul class="footer-tc">
+                <li><a href="https://www.tokyodisneyresort.jp/tc/sitemap.html" target="_blank">網站地圖</a></li>
+                <li><a href="https://www.tokyodisneyresort.jp/tc/privacy.html" target="_blank">隱私權政策（英文）</a></li>
+                <li><a href="https://www.tokyodisneyresort.jp/tc/legal.html" target="_blank">法律條款</a></li>
+                <li><a href="https://www.tokyodisneyresort.jp/tc/legalnotice.html" target="_blank">版權聲明</a></li>
+                <li><a href="http://www.olc.co.jp/en/index.html" target="_blank">Oriental Land Co., Ltd.</a></li>
+              </ul><!-- /tc -->
+      
+              <!-- kr -->
+              <ul class="footer-kr">
+                <li><a href="https://www.tokyodisneyresort.jp/kr/sitemap.html" target="_blank">사이트맵</a></li>
+                <li><a href="https://www.tokyodisneyresort.jp/kr/privacy.html" target="_blank">개인정보 취급방침(영어)</a></li>
+                <li><a href="https://www.tokyodisneyresort.jp/kr/legal.html" target="_blank">법적제약과 사용조건</a></li>
+                <li><a href="https://www.tokyodisneyresort.jp/kr/legalnotice.html" target="_blank">저작권/상표</a></li>
+                <li><a href="http://www.olc.co.jp/en/index.html" target="_blank">주식회사 오리엔탈랜드(Oriental Land Co., Ltd.) (영어)</a></li>
+              </ul><!-- /kr -->
+      
+              <!-- th -->
+              <ul class="footer-th">
+                <li><a href="https://www.tokyodisneyresort.jp/th/sitemap.html" target="_blank">แผนผังเว็บไซต์</a></li>
+                <li><a href="https://www.tokyodisneyresort.jp/th/privacy.html" target="_blank">นโยบายการคุ้มครองข้อมูลส่วนบุคคล (ภาษาอังกฤษ)</a></li>
+                <li><a href="https://www.tokyodisneyresort.jp/th/legal.html" target="_blank">ข้อจำกัดทางกฎหมายและเงื่อนไขในการใช้งาน</a></li>
+                <li><a href="https://www.tokyodisneyresort.jp/th/legalnotice.html" target="_blank">ลิขสิทธิ์/เครื่องหมายการค้า</a></li>
+                <li><a href="http://www.olc.co.jp/en/index.html" target="_blank">เว็บไซต์บริษัท Oriental Land Co., Ltd. (ภาษาอังกฤษ)</a></li>
+              </ul><!-- /th -->
+      
+              <!-- id -->
+              <ul class="footer-id">
+                <li><a href="https://www.tokyodisneyresort.jp/id/sitemap.html" target="_blank">Peta Situs</a></li>
+                <li><a href="https://www.tokyodisneyresort.jp/id/privacy.html" target="_blank">Kebijakan Privasi (Bahasa Inggris)</a></li>
+                <li><a href="https://www.tokyodisneyresort.jp/id/legal.html" target="_blank">Batasan Hukum dan Syarat Penggunaan</a></li>
+                <li><a href="https://www.tokyodisneyresort.jp/id/legalnotice.html" target="_blank">Hak Cipta / Merek Dagang</a></li>
+                <li><a href="http://www.olc.co.jp/en/index.html" target="_blank">Oriental Land Co., Ltd. (Bahasa Inggris)</a></li>
+              </ul><!-- /id -->
+      
+            </nav>
+            <p class="copyright">©Disney. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
       <!--{* /フッターインクルード *}-->
     </div>
     <!-- /.wrap -->
 
     <!--{* 計測用ADPLAN タグ *}-->
     <!--#include virtual="/ssi/adplan_inc.html" -->
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MFHWBL"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MFHWBL');</script>
+    <!-- End Google Tag Manager -->
     <!--{* /計測用ADPLAN タグ *}-->
 
     <script src="js/app.js"></script>
