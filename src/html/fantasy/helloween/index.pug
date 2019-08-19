@@ -14,7 +14,9 @@ block main
   | #{"\n"}
   .wrap
     //{* ヘッダーインクルード *}
-    //#include virtual="/ssi/header_event_ps_inc.html"
+    //- #include virtual="/ssi/header_event_ps_inc.html"
+    include /ssi/header_event_ps_inc.pug
+
     //{* /ヘッダーインクルード *}
     | #{"\n"}
     .contents-inner.breadcrumb_area.pc
@@ -87,12 +89,14 @@ block main
     | #{"\n"}
     //{* フッターインクルード *}
     //#include virtual="/ssi/footer_event_ps_inc.html"
+    include /ssi/footer_event_ps_inc.pug
     //{* /フッターインクルード *}
   // /.wrap 
 
   | #{"\n"}
   //{* 計測用ADPLAN タグ *}
   //#include virtual="/ssi/adplan_inc.html" 
+  include /ssi/adplan_inc.pug
   //{* /計測用ADPLAN タグ *}
   | #{"\n"}
 
