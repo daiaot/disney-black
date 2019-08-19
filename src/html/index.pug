@@ -34,8 +34,10 @@ block main
 
       .sec-inner
         // KV
-        #player(data-module="movie")
-          //- iframe(width="560" height="315" src="https://www.youtube.com/embed/bjmBJ1Fl0cs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="")
+        .youtube_wrap
+          .youtube
+            #player(data-module="movie")
+            //- iframe(width="560" height="315" src="https://www.youtube.com/embed/bjmBJ1Fl0cs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="")
 
       //- div(style='text-align:center;min-height:500px;')
       //-   p コンテンツエリア
