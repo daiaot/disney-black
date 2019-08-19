@@ -19,6 +19,7 @@ export default class Slider {
       infinite: true,
       speed: 300,
       arrows: false,
+      pauseOnHover: true,
       responsive: [
         {
           breakpoint: 736,
