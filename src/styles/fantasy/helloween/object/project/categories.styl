@@ -9,12 +9,14 @@ clearfix()
 #content-area
   position relative
   clear both
-  background: url(../images/bg.png) 50% 0 repeat;
+  background url('../images/bg.png') 50% 0 repeat
 
   a
-    transition: all .3s;
+    transition all 0.3s
+
     &:hover
-      opacity .7
+      opacity 0.7
+
   *
     box-sizing border-box
 
@@ -45,40 +47,44 @@ clearfix()
     color #fff
     font-size (26 / 750) * 100vw
     line-height 1.8
+
     +pc()
       font-size 26px
 
   &:nth-child(2)
     margin-bottom per(100)
+
     .sec-block__lead
-      background url(../images/img_lead01.png) 50% 0 no-repeat;
+      background url('../images/img_lead01.png') 50% 0 no-repeat
       background-size 104% auto
-      padding-top: per(201)
+      padding-top per(201)
 
   &:nth-child(3)
     .sec-block__title
-      background url(../images/img_title01.png) 50% 0 no-repeat;
+      background url('../images/img_title01.png') 50% 0 no-repeat
       background-size per(708) auto
-      padding-top: per(289)
+      padding-top per(289)
+
     .sec-block__text
       margin-top per(-21)
       padding-bottom per(60)
 
-
   &:nth-child(4)
-      background url(../images/deco_punpkin.png) 50% 0 no-repeat;
-      background-size per(711) auto
-      padding-top: per(196,711)
-      margin-top per(80)
-    .sec-block__title
-      background url(../images/img_title02.png) 50% 0 no-repeat;
-      background-size per(708) auto
-      padding-top: per(289)
-      margin-top per(110)
-    .sec-block__lead
-      background url(../images/img_lead02.png) 50% 0 no-repeat;
-      background-size per(587) auto
-      padding-top: per(132,587)
+    background url('../images/deco_punpkin.png') 50% 0 no-repeat
+    background-size per(711) auto
+    padding-top per(196, 711)
+    margin-top per(80)
+
+  .sec-block__title
+    background url('../images/img_title02.png') 50% 0 no-repeat
+    background-size per(708) auto
+    padding-top per(289)
+    margin-top per(110)
+
+  .sec-block__lead
+    background url('../images/img_lead02.png') 50% 0 no-repeat
+    background-size per(587) auto
+    padding-top per(132, 587)
 
 .youtube_wrap
   max-width 100% !important
@@ -119,20 +125,23 @@ clearfix()
   max-width 750px
   margin auto
 
-
 .gallery_wrap
   position relative
+
   &__lists
     display flex
     flex-wrap wrap
     justify-content space-between
     font-size 0
+
     li
       width per(235)
       padding-bottom 10px
+
       +sp()
         img
           width 100%
+
   .sec-btn__showmore
     position absolute
     // bottom 48px
@@ -140,39 +149,42 @@ clearfix()
     left 50%
     transform translate(-50%, -32.4%)
 
-
-
 .insta-wrap
   &__kv
-    background: url(../images/img_insta_kv.png) 50% 0 no-repeat
+    background url('../images/img_insta_kv.png') 50% 0 no-repeat
     background-size 100% auto
     padding-top per(789)
     margin-bottom per(20)
+
   &__stories
-    background: url(../images/deco_spider.png) 64% -4% no-repeat
+    background url('../images/deco_spider.png') 64% -4% no-repeat
     background-size per(903) auto
-    padding-top per(218,903)
+    padding-top per(218, 903)
     margin-bottom per(20)
+
     ul
       display flex
       flex-wrap wrap
       justify-content space-between
       padding 0 per(24)
       margin-bottom per(35)
+
     li
-      width per(225,702)
+      width per(225, 702)
+
       img
         width 100%
 
 .sec-btn
   &__dl
     display block
-    background: url(../images/btn_download.png) 50% 0 no-repeat
+    background url('../images/btn_download.png') 50% 0 no-repeat
     background-size per(700) auto
     padding-top per(82)
+
   &__instagram
     display block
-    background: url(../images/btn_instagram.png) 50% 0 no-repeat
+    background url('../images/btn_instagram.png') 50% 0 no-repeat
     background-size per(700) auto
     padding-top per(82)
 
@@ -181,14 +193,6 @@ clearfix()
     width per(354)
     height 0
     padding-top per(37)
-    background url(../images/btn_more.png) 50% 0 no-repeat
+    background url('../images/btn_more.png') 50% 0 no-repeat
     margin auto
     background-size 100% auto
-
-
-    // background-size per(354) auto
-    // padding-top per(37)
-
-    // width per(354)
-    // height per(37)
-    // margin auto
