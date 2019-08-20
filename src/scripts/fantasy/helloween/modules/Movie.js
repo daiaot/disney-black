@@ -9,7 +9,7 @@ export default class Movie {
 
   bindEvents() {
 
-    console.log('movie - bindEvents()')
+    // console.log('movie - bindEvents()')
 
     // var tag = document.createElement('script');
     // tag.src = "https://www.youtube.com/iframe_api";

@@ -9,18 +9,76 @@ clearfix()
 #content-area
   position relative
   clear both
+  background: url(../images/bg.png) 50% 0 repeat;
 
-  // background: #87dcff url(../images/bg01.jpg) 50% 0 repeat-x;
-  & > *
+  a
+    transition: all .3s;
+    &:hover
+      opacity .7
+  *
     box-sizing border-box
 
   .sec-inner
     position relative
     // z-index: 70
-    padding 10rem 0
+    overflow hidden
 
 .sec-block
-  margin-bottom 30px
+  // margin-bottom 30px
+  h2
+    text-indent 100%
+    white-space nowrap
+    overflow hidden
+    line-height 0
+
+  h3
+    text-indent 100%
+    white-space nowrap
+    overflow hidden
+    line-height 0
+
+  &__lead
+    display block
+
+  &__text
+    text-align center
+    color #fff
+    font-size (26 / 750) * 100vw
+    line-height 1.8
+    +pc()
+      font-size 26px
+
+  &:nth-child(2)
+    margin-bottom per(100)
+    .sec-block__lead
+      background url(../images/img_lead01.png) 50% 0 no-repeat;
+      background-size 104% auto
+      padding-top: per(201)
+
+  &:nth-child(3)
+    .sec-block__title
+      background url(../images/img_title01.png) 50% 0 no-repeat;
+      background-size per(708) auto
+      padding-top: per(289)
+    .sec-block__text
+      margin-top per(-21)
+      padding-bottom per(60)
+
+
+  &:nth-child(4)
+      background url(../images/deco_punpkin.png) 50% 0 no-repeat;
+      background-size per(711) auto
+      padding-top: per(196,711)
+      margin-top per(80)
+    .sec-block__title
+      background url(../images/img_title02.png) 50% 0 no-repeat;
+      background-size per(708) auto
+      padding-top: per(289)
+      margin-top per(110)
+    .sec-block__lead
+      background url(../images/img_lead02.png) 50% 0 no-repeat;
+      background-size per(587) auto
+      padding-top: per(132,587)
 
 .youtube_wrap
   max-width 100% !important
@@ -61,26 +119,76 @@ clearfix()
   max-width 750px
   margin auto
 
-.gallery_wrap
-  padding-top 40px
 
+.gallery_wrap
+  position relative
   &__lists
     display flex
     flex-wrap wrap
     justify-content space-between
     font-size 0
-
     li
       width per(235)
       padding-bottom 10px
-
       +sp()
         img
           width 100%
+  .sec-btn__showmore
+    position absolute
+    // bottom 48px
+    bottom 0
+    left 50%
+    transform translate(-50%, -32.4%)
 
-.btn--showmore
-  display block
-  width 100%
-  height 60px
-  color #fff
-  background #999
+
+
+.insta-wrap
+  &__kv
+    background: url(../images/img_insta_kv.png) 50% 0 no-repeat
+    background-size 100% auto
+    padding-top per(789)
+    margin-bottom per(20)
+  &__stories
+    background: url(../images/deco_spider.png) 64% -4% no-repeat
+    background-size per(903) auto
+    padding-top per(218,903)
+    margin-bottom per(20)
+    ul
+      display flex
+      flex-wrap wrap
+      justify-content space-between
+      padding 0 per(24)
+      margin-bottom per(35)
+    li
+      width per(225,702)
+      img
+        width 100%
+
+.sec-btn
+  &__dl
+    display block
+    background: url(../images/btn_download.png) 50% 0 no-repeat
+    background-size per(700) auto
+    padding-top per(82)
+  &__instagram
+    display block
+    background: url(../images/btn_instagram.png) 50% 0 no-repeat
+    background-size per(700) auto
+    padding-top per(82)
+
+  &__showmore
+    display block
+    width per(354)
+    height 0
+    padding-top per(37)
+    background url(../images/btn_more.png) 50% 0 no-repeat
+    margin auto
+    background-size 100% auto
+
+
+    // background-size per(354) auto
+    // padding-top per(37)
+
+    // width per(354)
+    // height per(37)
+    // margin auto

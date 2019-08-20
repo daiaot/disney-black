@@ -15,7 +15,7 @@ export default class ShowMore {
             .each(function() {
               $(this).hide()
             })
-          var btn = $('.gallery_wrap').find('.btn--showmore')
+          var btn = $('.gallery_wrap').find('.sec-btn__showmore')
           btn.click(function() {
             // $(this).parent().find("li").fadeIn(1000);
             $(this)

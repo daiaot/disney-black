@@ -27,7 +27,7 @@ block main
             span.text-buttons.text-buttons-s
               a(href='/top.html') TOP
           li.current
-            span ページタイトル
+            span ブラックコーデディズニー
       //{* /ここにパンくずを入れてください PC *}
 
     | #{"\n"}
@@ -43,6 +43,8 @@ block main
               //- iframe(width="560" height="315" src="https://www.youtube.com/embed/bjmBJ1Fl0cs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="")
 
         .sec-block
+          .sec-block__lead
+
           .slide_wrap(data-module='slider')
             .slide_wrap__image
               img(src=`images/img_slide_01.jpg` alt="")
@@ -53,7 +55,41 @@ block main
 
 
         .sec-block
+          h2.sec-block__title
+           | 東京ディズニーリゾート公式 Instagramにあなたが登場!?
+
+          p.sec-block__text
+            | カメラキャストに撮影された写真は
+            br
+            | 東京ディズニーリゾート公式サイトと
+            br
+            | インスタグラムストーリーズにアップされるかも!?
+
+          .insta-wrap
+            .insta-wrap__kv
+            a.sec-btn__dl(href="http://www.tokyodisneyresort.jp/photo/index02.html" target='_blank')
+            .insta-wrap__stories
+              ul
+                li
+                  img(src=`images/img_stories01.png` alt="")
+                li
+                  img(src=`images/img_stories02.png` alt="")
+                li
+                  img(src=`images/img_stories03.png` alt="")
+            a.sec-btn__instagram(href="http://www.tokyodisneyresort.jp/photo/index02.html" target='_blank')
+
+
+
+        .sec-block
+
+          h2.sec-block__title
+            | みんなのブラックコーデを見てみよう！
+
+          h3.sec-block__lead
+            | American Waterfront
+            | アメリカンウォーターフロントで撮影した写真を見てみよう!
           .gallery_wrap(data-module='showMore')
+
             ul.gallery_wrap__lists
               li
                 img(src=`images/img_thumb_01.jpg` alt="")
@@ -74,7 +110,7 @@ block main
               li
                 img(src=`images/img_thumb_09.jpg` alt="")
 
-            .btn--showmore SHOW MORE
+            .sec-btn__showmore
 
 
 
