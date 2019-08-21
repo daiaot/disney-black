@@ -42,6 +42,9 @@ clearfix()
   &__lead
     display block
 
+    h3&
+      margin-bottom per(24)
+
   &__text
     text-align center
     color #fff
@@ -51,7 +54,8 @@ clearfix()
     +pc()
       font-size 26px
 
-  &:nth-child(2)
+  // &:nth-child(2)
+  &:nth-of-type(2)
     margin-bottom per(100)
 
     .sec-block__lead
@@ -59,7 +63,7 @@ clearfix()
       background-size 104% auto
       padding-top per(201)
 
-  &:nth-child(3)
+  &:nth-of-type(3)
     .sec-block__title
       background url('../images/img_title01.png') 50% 0 no-repeat
       background-size per(708) auto
@@ -69,22 +73,72 @@ clearfix()
       margin-top per(-21)
       padding-bottom per(60)
 
-  &:nth-child(4)
+  &:nth-of-type(4)
     background url('../images/deco_punpkin.png') 50% 0 no-repeat
     background-size per(711) auto
     padding-top per(196, 711)
     margin-top per(80)
 
-  .sec-block__title
-    background url('../images/img_title02.png') 50% 0 no-repeat
-    background-size per(708) auto
-    padding-top per(289)
-    margin-top per(110)
+    .sec-block__title
+      background url('../images/img_title02.png') 50% 0 no-repeat
+      background-size per(708) auto
+      padding-top per(289)
+      margin-top per(110)
 
-  .sec-block__lead
-    background url('../images/img_lead02.png') 50% 0 no-repeat
-    background-size per(587) auto
-    padding-top per(132, 587)
+    .gallery_wrap
+      &:nth-of-type(1)
+        .sec-block__lead
+          background url('../images/img_lead02.png') 50% 0 no-repeat
+          background-size per(587) auto
+          padding-top per(132, 750)
+
+      &:nth-of-type(2)
+        .sec-block__lead
+          background url('../images/img_lead03.png') 50% 0 no-repeat
+          background-size per(487) auto
+          padding-top per(125, 750)
+
+  &:nth-of-type(5)
+    background url('../images/deco_punpkin.png') 50% bottom no-repeat
+    background-size per(711) auto
+    padding-bottom per(196, 711)
+    margin per(110) 0 0
+
+    .sec-block__title
+      background url('../images/img_title03.png') 50% 0 no-repeat
+      background-size per(763) auto
+      padding-top per(313)
+      margin-top per(110)
+      position relative
+      z-index 1
+
+    .sec-btn__specialgoods
+      z-index 10
+      position absolute
+      left 50%
+      bottom 2.5%
+      transform translate(-50%, -50%)
+
+    .slide_wrap
+      margin-top per(-100)
+      // margin-bottom per(130)
+      margin-bottom 30%
+
+      &:after
+        content ''
+        display block
+        width 100%
+        position absolute
+        // bottom per(-135)
+        bottom -16%
+        background url('../images/deco_web.png') 55.4% 0 no-repeat
+        background-size per(831) auto
+        // padding-top per(184,831)
+        padding-top per(184)
+        z-index 0
+
+      .slick-dots
+        z-index 2
 
 .youtube_wrap
   max-width 100% !important
@@ -94,11 +148,20 @@ clearfix()
   position relative
   cursor pointer
 
+  +sp()
+    height calc(100vh - 140px)
+
 .youtube
   width 100% !important
   display block
   position relative
-  padding-top 56.25% !important
+
+  // padding-top 56.25% !important
+  +pc()
+    padding-top per(1175) !important
+
+  +sp()
+    height calc(100vh - 140px)
 
   iframe
     position absolute
@@ -114,6 +177,37 @@ clearfix()
     // top: -14.12%;
     // width: 100%
     // height 750px
+
+.jbj-hero__scroll
+  position absolute
+  bottom 0
+  left 0
+  width 100%
+  padding 0 0 55px
+  font-family brandon-grotesque, sans-serif
+  font-size 12px
+  font-weight 300
+  color #fff
+  text-align center
+  letter-spacing 0.08em
+
+  +sp()
+    padding 0 0 50px
+
+  &:after
+    position absolute
+    right 0
+    bottom 0
+    left 0
+    display block
+    width 2px
+    height 40px
+    margin 0 auto
+    content ''
+    background-color #fff
+
+    +sp()
+      width 1px
 
 // #player
 // width: 100% !important
@@ -133,21 +227,31 @@ clearfix()
     flex-wrap wrap
     justify-content space-between
     font-size 0
+    padding per(24) 0
+    background #fff
+    margin-bottom per(70)
 
     li
       width per(235)
-      padding-bottom 10px
+      padding-top per(24)
 
       +sp()
         img
           width 100%
+
+      &:nth-child(-n+3)
+        padding-top 0
+
+  &:last-of-type
+    .gallery_wrap__lists
+      margin-bottom 0
 
   .sec-btn__showmore
     position absolute
     // bottom 48px
     bottom 0
     left 50%
-    transform translate(-50%, -32.4%)
+    transform translate(-50%, -62%)
 
 .insta-wrap
   &__kv
@@ -188,6 +292,16 @@ clearfix()
     background-size per(700) auto
     padding-top per(82)
 
+  &__specialgoods
+    display block
+    background url('../images/btn_specialgoods.png') 50% 0 no-repeat
+    background-size 100% auto
+    width per(526)
+    // background-size per(526) auto
+    height 0
+    margin auto
+    padding-top per(82)
+
   &__showmore
     display block
     width per(354)
@@ -196,3 +310,107 @@ clearfix()
     background url('../images/btn_more.png') 50% 0 no-repeat
     margin auto
     background-size 100% auto
+
+.slide_wrap__image
+  position relative
+  // .slide_wrap__inner
+  // width 100%
+  // height 100%
+
+// .slide_wrap__inner
+.slide_wrap__image
+  .slide_wrap__balloon
+    position absolute
+    top 100px
+    left 100px
+    background #3e3a39
+    opacity 0.8
+    display flex
+    align-items center
+    justify-content space-between
+    color #fff
+    padding per(8) per(32)
+    border-radius 8px
+
+    // opacity 0
+    // transform translate(0, 50px)
+    // animation-name fadein
+    // animation-duration 2s
+    // animation-iteration-count infinite
+    &:after
+      content ''
+      display block
+      position absolute
+      bottom -24px
+      left 50%
+      transform translate(-50%, 0)
+      width 0
+      height 0
+      border-left 18px solid transparent
+      border-right 18px solid transparent
+      border-top 24px solid #3e3a39
+
+      +sp()
+        bottom -12px
+        border-left 9px solid transparent
+        border-right 9px solid transparent
+        border-top 12px solid #3e3a39
+
+    &:focus
+      outline none
+
+    &:hover
+      opacity 0.5
+
+    &__thumb
+      background-size 100% auto
+      width 78px
+      padding-top 78px
+
+      +sp()
+        width 39px
+        padding-top 39px
+
+    &__name
+      font-size 23px
+      line-height 1.8
+      padding 0 14px
+
+      +sp()
+        font-size 12px
+        padding 0 7px
+
+.slide_wrap__inner
+  &._item01
+    .slide_wrap__balloon:nth-of-type(1)
+      top per(200, 1000)
+      left per(32)
+
+      .slide_wrap__balloon__thumb
+        background url('../images/thumbnail02.png') 50% 0 no-repeat
+        background-size 100% auto
+
+    .slide_wrap__balloon:nth-of-type(2)
+      top per(90, 1000)
+      left 55%
+
+      .slide_wrap__balloon__thumb
+        background url('../images/thumbnail01.png') 50% 0 no-repeat
+        background-size 100% auto
+
+  &._item02
+    .slide_wrap__balloon:nth-of-type(1)
+      top per(200, 1000)
+      left per(32)
+
+      .slide_wrap__balloon__thumb
+        background url('../images/thumbnail02.png') 50% 0 no-repeat
+        background-size 100% auto
+
+    .slide_wrap__balloon:nth-of-type(2)
+      top per(90, 1000)
+      left 55%
+
+      .slide_wrap__balloon__thumb
+        background url('../images/thumbnail01.png') 50% 0 no-repeat
+        background-size 100% auto
