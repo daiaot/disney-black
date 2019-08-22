@@ -146,22 +146,23 @@ clearfix()
   width 100%
   overflow hidden
   position relative
-  cursor pointer
+  height calc(100vh - 132px)
 
   +sp()
-    height calc(100vh - 140px)
+    height calc(100vh - 100px)
 
 .youtube
   width 100% !important
   display block
   position relative
-
+  pointer-events none
   // padding-top 56.25% !important
   +pc()
-    padding-top per(1175) !important
-
+    // padding-top per(1175) !important
+    height calc(100vh - 132px)
   +sp()
-    height calc(100vh - 140px)
+    // padding-top per(1175,315) !important
+    height calc(100vh - 100px)
 
   iframe
     position absolute
@@ -171,8 +172,11 @@ clearfix()
     top 50%
     left 50%
     transform translate(-50%, -50%)
-    width 130% !important
-    height 130% !important
+    // width 130% !important
+    // height 130% !important
+    // width 130% !important
+    height per(1175,315) !important
+    width per(1175,315) !important
     // +pc()
     // top: -14.12%;
     // width: 100%
