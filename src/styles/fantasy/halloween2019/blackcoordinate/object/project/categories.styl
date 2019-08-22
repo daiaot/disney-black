@@ -85,7 +85,7 @@ clearfix()
       padding-top per(289)
       margin-top per(110)
 
-    .gallery_wrap
+    .gallery-wrap
       &:nth-of-type(1)
         .sec-block__lead
           background url('../images/img_lead02.png') 50% 0 no-repeat
@@ -119,7 +119,7 @@ clearfix()
       bottom 2.5%
       transform translate(-50%, -50%)
 
-    .slide_wrap
+    .slide-wrap
       margin-top per(-100)
       // margin-bottom per(130)
       margin-bottom 30%
@@ -140,7 +140,7 @@ clearfix()
       .slick-dots
         z-index 2
 
-.youtube_wrap
+.youtube-wrap
   max-width 100% !important
   min-width 100% !important
   width 100%
@@ -151,7 +151,7 @@ clearfix()
   +sp()
     height calc(100vh - 100px)
 
-.youtube
+.youtube-content
   width 100% !important
   display block
   position relative
@@ -185,36 +185,34 @@ clearfix()
     // width: 100%
     // height 750px
 
-.jbj-hero__scroll
-  position absolute
-  bottom 0
-  left 0
-  width 100%
-  padding 0 0 55px
-  font-family brandon-grotesque, sans-serif
-  font-size 12px
-  font-weight 300
-  color #fff
-  text-align center
-  letter-spacing 0.08em
-
-  +sp()
-    padding 0 0 50px
-
-  &:after
+  &__scroll
     position absolute
-    right 0
     bottom 0
     left 0
-    display block
-    width 2px
-    height 40px
-    margin 0 auto
-    content ''
-    background-color #fff
-
+    width 100%
+    padding 0 0 55px
+    font-family brandon-grotesque, sans-serif
+    font-size 12px
+    font-weight 300
+    color #fff
+    text-align center
+    letter-spacing 0.08em
     +sp()
-      width 1px
+      padding 0 0 50px
+
+    &:after
+      position absolute
+      right 0
+      bottom 0
+      left 0
+      display block
+      width 2px
+      height 40px
+      margin 0 auto
+      content ''
+      background-color #fff
+      +sp()
+        width 1px
 
 // #player
 // width: 100% !important
@@ -226,7 +224,7 @@ clearfix()
   max-width 750px
   margin auto
 
-.gallery_wrap
+.gallery-wrap
   position relative
 
   &__lists
@@ -250,7 +248,7 @@ clearfix()
         padding-top 0
 
   &:last-of-type
-    .gallery_wrap__lists
+    .gallery-wrap__lists
       margin-bottom 0
 
   .sec-btn__showmore
@@ -259,6 +257,9 @@ clearfix()
     bottom 0
     left 50%
     transform translate(-50%, -62%)
+    // transition all .3s
+    // &:hover
+    //   opacity .8
 
 .insta-wrap
   &__kv
@@ -318,15 +319,15 @@ clearfix()
     margin auto
     background-size 100% auto
 
-.slide_wrap__image
+.slide-wrap__image
   position relative
-  // .slide_wrap__inner
+  // .slide-wrap__inner
   // width 100%
   // height 100%
 
-// .slide_wrap__inner
-.slide_wrap__image
-  .slide_wrap__balloon
+// .slide-wrap__inner
+.slide-wrap__image
+  .slide-wrap__balloon
     position absolute
     top 100px
     left 100px
@@ -387,37 +388,37 @@ clearfix()
         font-size 12px
         padding 0 7px
 
-.slide_wrap__inner
+.slide-wrap__inner
   &._item01
-    .slide_wrap__balloon:nth-of-type(1)
+    .slide-wrap__balloon:nth-of-type(1)
       top per(200, 1000)
       left per(32)
 
-      .slide_wrap__balloon__thumb
+      .slide-wrap__balloon__thumb
         background url('../images/thumbnail02.png') 50% 0 no-repeat
         background-size 100% auto
 
-    .slide_wrap__balloon:nth-of-type(2)
+    .slide-wrap__balloon:nth-of-type(2)
       top per(90, 1000)
       left 55%
 
-      .slide_wrap__balloon__thumb
+      .slide-wrap__balloon__thumb
         background url('../images/thumbnail01.png') 50% 0 no-repeat
         background-size 100% auto
 
   &._item02
-    .slide_wrap__balloon:nth-of-type(1)
+    .slide-wrap__balloon:nth-of-type(1)
       top per(200, 1000)
       left per(32)
 
-      .slide_wrap__balloon__thumb
+      .slide-wrap__balloon__thumb
         background url('../images/thumbnail02.png') 50% 0 no-repeat
         background-size 100% auto
 
-    .slide_wrap__balloon:nth-of-type(2)
+    .slide-wrap__balloon:nth-of-type(2)
       top per(90, 1000)
       left 55%
 
-      .slide_wrap__balloon__thumb
+      .slide-wrap__balloon__thumb
         background url('../images/thumbnail01.png') 50% 0 no-repeat
         background-size 100% auto

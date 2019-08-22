@@ -3,7 +3,7 @@ export default class Movie {
   constructor(elem) {
     this.elem = elem
     // this.opts = opts
-    console.log('movie')
+    // console.log('movie')
     this.bindEvents()
   }
 
