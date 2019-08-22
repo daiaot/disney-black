@@ -9,7 +9,7 @@ export default class ShowMore {
   bindEvents() {
     $(window).on('load resize', function() {
       $(function() {
-        $('.gallery_wrap__lists').each(function() {
+        $('._showmore').each(function() {
           $(this)
             .find('li:gt(5)')
             .each(function() {
