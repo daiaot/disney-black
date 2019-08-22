@@ -36,7 +36,6 @@ export default class Movie {
         'onStateChange': onPlayerStateChange
       }
     });
-  
 
     // var player;
     // function onYouTubeIframeAPIReady() {
@@ -81,6 +80,8 @@ export default class Movie {
       player.stopVideo();
     }
 
+    // iframeのreadyをグローバルにする
+    // window.onYouTubeIframeAPIReady = onYouTubeIframeAPIReady;
 
   }
 
