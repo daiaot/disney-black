@@ -64,9 +64,8 @@ export default class Movie {
 
     function onPlayerReady() {
       console.log('movie - onPlayerReady()')
-      player.playVideo();
       player.mute();
-
+      player.playVideo();
     }
 
     var done = false;
