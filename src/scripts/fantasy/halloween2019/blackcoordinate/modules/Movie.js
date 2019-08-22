@@ -3,13 +3,13 @@ export default class Movie {
   constructor(elem) {
     this.elem = elem
     // this.opts = opts
-    // console.log('movie')
+    console.log('movie')
     this.bindEvents()
   }
 
   bindEvents() {
 
-    // console.log('movie - bindEvents()')
+    console.log('movie - bindEvents()')
 
     // var tag = document.createElement('script');
     // tag.src = "https://www.youtube.com/iframe_api";
