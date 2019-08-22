@@ -87,8 +87,8 @@ block main
           h2.sec-block__title
             | みんなのブラックコーデを見てみよう！
 
-          .gallery-wrap(data-module='showMore')
-            //- .gallery-wrap
+          //- .gallery-wrap(data-module='showMore')
+          .gallery-wrap
             h3.sec-block__lead
               | American Waterfront
               | アメリカンウォーターフロントで撮影した写真を見てみよう!
@@ -111,7 +111,7 @@ block main
                 img(src=`images/img_thumb_08.jpg` alt="")
               li
                 img(src=`images/img_thumb_09.jpg` alt="")
-            .sec-btn__showmore
+            //- .sec-btn__showmore
 
           .gallery-wrap
             h3.sec-block__lead
@@ -147,23 +147,46 @@ block main
             .slide-wrap__image
               .slide-wrap__inner._item01
                 a.slide-wrap__balloon(href='https://www.tokyodisneyresort.jp/tags/goods/8044/' target='_blank')
-                  .slide-wrap__balloon__thumb
-                  .slide-wrap__balloon__name キャップ
+                  .slide-wrap__balloon__bg
+                  .slide-wrap__balloon__content
+                    .slide-wrap__balloon__content__thumb
+                    .slide-wrap__balloon__content__name キャップ
+
                 a.slide-wrap__balloon(href='https://www.tokyodisneyresort.jp/tags/goods/8030/' target='_blank')
-                  .slide-wrap__balloon__thumb
-                  .slide-wrap__balloon__name サングラス
+                  .slide-wrap__balloon__bg
+                  .slide-wrap__balloon__content
+                    .slide-wrap__balloon__content__thumb
+                    .slide-wrap__balloon__content__name サングラス
+
               img(src=`images/img_item01.jpg` alt="")
 
 
             .slide-wrap__image
               .slide-wrap__inner._item02
                 a.slide-wrap__balloon(href='https://www.tokyodisneyresort.jp/tags/goods/8044/' target='_blank')
-                  .slide-wrap__balloon__thumb
-                  .slide-wrap__balloon__name キャップ
+                  .slide-wrap__balloon__bg
+                  .slide-wrap__balloon__content
+                    .slide-wrap__balloon__content__thumb
+                    .slide-wrap__balloon__content__name キャップ
+
                 a.slide-wrap__balloon(href='https://www.tokyodisneyresort.jp/tags/goods/8030/' target='_blank')
-                  .slide-wrap__balloon__thumb
-                  .slide-wrap__balloon__name サングラス
+                  .slide-wrap__balloon__bg
+                  .slide-wrap__balloon__content
+                    .slide-wrap__balloon__content__thumb
+                    .slide-wrap__balloon__content__name サングラス
+
               img(src=`images/img_item02.jpg` alt="")
+
+
+            //- .slide-wrap__image
+            //-   .slide-wrap__inner._item02
+            //-     a.slide-wrap__balloon(href='https://www.tokyodisneyresort.jp/tags/goods/8044/' target='_blank')
+            //-       .slide-wrap__balloon__thumb
+            //-       .slide-wrap__balloon__name キャップ
+            //-     a.slide-wrap__balloon(href='https://www.tokyodisneyresort.jp/tags/goods/8030/' target='_blank')
+            //-       .slide-wrap__balloon__thumb
+            //-       .slide-wrap__balloon__name サングラス
+            //-   img(src=`images/img_item02.jpg` alt="")
 
 
 

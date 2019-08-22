@@ -197,6 +197,7 @@ clearfix()
     color #fff
     text-align center
     letter-spacing 0.08em
+
     +sp()
       padding 0 0 50px
 
@@ -211,6 +212,7 @@ clearfix()
       margin 0 auto
       content ''
       background-color #fff
+
       +sp()
         width 1px
 
@@ -259,7 +261,7 @@ clearfix()
     transform translate(-50%, -62%)
     // transition all .3s
     // &:hover
-    //   opacity .8
+    // opacity .8
 
 .insta-wrap
   &__kv
@@ -328,6 +330,107 @@ clearfix()
 // .slide-wrap__inner
 .slide-wrap__image
   .slide-wrap__balloon
+    display block
+    position absolute
+    top 100px
+    left 100px
+    &__bg
+      position absolute
+      top 0
+      left 0
+      background #3e3a39
+      opacity 0.8
+      border-radius 8px
+      width 100%
+      padding-top 47px
+      +pc()
+        padding-top 90px
+      &:after
+        content ''
+        display block
+        position absolute
+        bottom -16px
+        left 50%
+        transform translate(-50%, 0)
+        width 0
+        height 0
+        border-left 14px solid transparent
+        border-right 14px solid transparent
+        border-top 16px solid #3e3a39
+        +sp()
+          bottom -8px
+          border-left 8px solid transparent
+          border-right 7px solid transparent
+          border-top 8px solid #3e3a39
+    &__content
+      position relative
+      display flex
+      align-items center
+      justify-content space-between
+      top 50%
+      left 50%
+      transform translateX(-50%)
+      border-radius 8px
+      padding 6px 32px
+      +sp()
+        padding 4px 16px
+
+      &__thumb
+        background-size 100% auto
+        width 78px
+        padding-top 78px
+        +sp()
+          width 39px
+          padding-top 39px
+
+      &__name
+        font-size 23px
+        line-height 1.8
+        padding 0 14px
+        color #fff
+        +sp()
+          font-size 12px
+          padding 0 7px
+
+
+.slide-wrap__inner
+  &._item01
+    .slide-wrap__balloon:nth-of-type(1)
+      top 23%
+      left 3.2666%
+      .slide-wrap__balloon__content__thumb
+        background url('../images/thumbnail02.png') 50% 0 no-repeat
+        background-size 100% auto
+
+    .slide-wrap__balloon:nth-of-type(2)
+      top 10%
+      left 50%
+      .slide-wrap__balloon__content__thumb
+        background url('../images/thumbnail01.png') 50% 0 no-repeat
+        background-size 100% auto
+
+  &._item02
+    .slide-wrap__balloon:nth-of-type(1)
+      top per(200, 1000)
+      left per(32)
+      .slide-wrap__balloon__content__thumb
+        background url('../images/thumbnail02.png') 50% 0 no-repeat
+        background-size 100% auto
+
+    .slide-wrap__balloon:nth-of-type(2)
+      top per(90, 1000)
+      left 55%
+      .slide-wrap__balloon__content__thumb
+        background url('../images/thumbnail01.png') 50% 0 no-repeat
+        background-size 100% auto
+
+
+
+
+
+
+  //old
+  .slide-wrap__balloon-old
     position absolute
     top 100px
     left 100px
@@ -339,7 +442,6 @@ clearfix()
     color #fff
     padding per(8) per(32)
     border-radius 8px
-
     // opacity 0
     // transform translate(0, 50px)
     // animation-name fadein
@@ -388,37 +490,37 @@ clearfix()
         font-size 12px
         padding 0 7px
 
-.slide-wrap__inner
-  &._item01
-    .slide-wrap__balloon:nth-of-type(1)
-      top per(200, 1000)
-      left per(32)
+// .slide-wrap__inner
+//   &._item01
+//     .slide-wrap__balloon-old:nth-of-type(1)
+//       top per(200, 1000)
+//       left per(32)
 
-      .slide-wrap__balloon__thumb
-        background url('../images/thumbnail02.png') 50% 0 no-repeat
-        background-size 100% auto
+//       .slide-wrap__balloon__thumb
+//         background url('../images/thumbnail02.png') 50% 0 no-repeat
+//         background-size 100% auto
 
-    .slide-wrap__balloon:nth-of-type(2)
-      top per(90, 1000)
-      left 55%
+//     .slide-wrap__balloon-old:nth-of-type(2)
+//       top per(90, 1000)
+//       left 55%
 
-      .slide-wrap__balloon__thumb
-        background url('../images/thumbnail01.png') 50% 0 no-repeat
-        background-size 100% auto
+//       .slide-wrap__balloon__thumb
+//         background url('../images/thumbnail01.png') 50% 0 no-repeat
+//         background-size 100% auto
 
-  &._item02
-    .slide-wrap__balloon:nth-of-type(1)
-      top per(200, 1000)
-      left per(32)
+//   &._item02
+//     .slide-wrap__balloon-old:nth-of-type(1)
+//       top per(200, 1000)
+//       left per(32)
 
-      .slide-wrap__balloon__thumb
-        background url('../images/thumbnail02.png') 50% 0 no-repeat
-        background-size 100% auto
+//       .slide-wrap__balloon__thumb
+//         background url('../images/thumbnail02.png') 50% 0 no-repeat
+//         background-size 100% auto
 
-    .slide-wrap__balloon:nth-of-type(2)
-      top per(90, 1000)
-      left 55%
+//     .slide-wrap__balloon:nth-of-type(2)
+//       top per(90, 1000)
+//       left 55%
 
-      .slide-wrap__balloon__thumb
-        background url('../images/thumbnail01.png') 50% 0 no-repeat
-        background-size 100% auto
+//       .slide-wrap__balloon__thumb
+//         background url('../images/thumbnail01.png') 50% 0 no-repeat
+//         background-size 100% auto
