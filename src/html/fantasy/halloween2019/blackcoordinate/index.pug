@@ -14,8 +14,8 @@ block main
   | #{"\n"}
   .wrap
     //{* ヘッダーインクルード *}
-    //- #include virtual="/ssi/header_event_ps_inc.html"
-    include /ssi/header_event_ps_inc.pug
+    //#include virtual="/ssi/header_event_ps_inc.html"
+    //- include /ssi/header_event_ps_inc.pug
 
     //{* /ヘッダーインクルード *}
     | #{"\n"}
@@ -176,6 +176,37 @@ block main
 
               img(src=`images/img_item02.jpg` alt="")
 
+            .slide-wrap__image
+              .slide-wrap__inner._item02
+                a.slide-wrap__balloon(href='https://www.tokyodisneyresort.jp/tags/goods/8044/' target='_blank')
+                  .slide-wrap__balloon__bg
+                  .slide-wrap__balloon__content
+                    .slide-wrap__balloon__content__thumb
+                    .slide-wrap__balloon__content__name キャップ
+
+                a.slide-wrap__balloon(href='https://www.tokyodisneyresort.jp/tags/goods/8030/' target='_blank')
+                  .slide-wrap__balloon__bg
+                  .slide-wrap__balloon__content
+                    .slide-wrap__balloon__content__thumb
+                    .slide-wrap__balloon__content__name サングラス
+
+              img(src=`images/img_item03.jpg` alt="")
+
+            .slide-wrap__image
+              .slide-wrap__inner._item02
+                a.slide-wrap__balloon(href='https://www.tokyodisneyresort.jp/tags/goods/8044/' target='_blank')
+                  .slide-wrap__balloon__bg
+                  .slide-wrap__balloon__content
+                    .slide-wrap__balloon__content__thumb
+                    .slide-wrap__balloon__content__name キャップ
+
+                a.slide-wrap__balloon(href='https://www.tokyodisneyresort.jp/tags/goods/8030/' target='_blank')
+                  .slide-wrap__balloon__bg
+                  .slide-wrap__balloon__content
+                    .slide-wrap__balloon__content__thumb
+                    .slide-wrap__balloon__content__name サングラス
+
+              img(src=`images/img_item04.jpg` alt="")
 
             //- .slide-wrap__image
             //-   .slide-wrap__inner._item02
@@ -210,15 +241,15 @@ block main
 
     | #{"\n"}
     //{* フッターインクルード *}
-    //- //#include virtual="/ssi/footer_event_ps_inc.html"
-    include /ssi/footer_event_ps_inc.pug
+    //#include virtual="/ssi/footer_event_ps_inc.html"
+    //- include /ssi/footer_event_ps_inc.pug
     //{* /フッターインクルード *}
   // /.wrap 
 
   | #{"\n"}
   //{* 計測用ADPLAN タグ *}
-  //- include virtual="/ssi/adplan_inc.html"
-  include /ssi/adplan_inc.pug
+  //include virtual="/ssi/adplan_inc.html"
+  //- include /ssi/adplan_inc.pug
   //{* /計測用ADPLAN タグ *}
   | #{"\n"}
 
