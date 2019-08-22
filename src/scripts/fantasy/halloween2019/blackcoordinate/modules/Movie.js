@@ -19,7 +19,7 @@ export default class Movie {
     var player;
     player = new YT.Player('player', {
       width: '100%',
-      videoId: 'Shcpf7OcGyY',
+      videoId: 'RTkGg0In1k4',
       playerVars: {
         'autoplay': 1,
         'modestbranding': 1,
@@ -29,7 +29,7 @@ export default class Movie {
         'disablekb': 1,
         'loop' : 1,
         'rel': 0,
-        'playlist' : 'Shcpf7OcGyY'
+        'playlist' : 'RTkGg0In1k4'
       },
       events: {
         'onReady': onPlayerReady,
