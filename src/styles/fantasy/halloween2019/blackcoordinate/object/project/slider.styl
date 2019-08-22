@@ -7,14 +7,21 @@
   // text-align center
   // display flex
   position absolute
-  bottom -40px
+  // bottom -40px
+  // bottom per(-28)
+  bottom -34px
   display block
   width 100%
   padding 0
   margin 0
   list-style none
   text-align center
+  +sp()
+    bottom -18px
 
+
+  ul&
+    font-size 0
   li
     // display inline
     position relative
@@ -24,6 +31,9 @@
     margin 0 5px
     padding 0
     cursor pointer
+    +sp()
+      width 8px
+      height 8px
 
     &.slick-active
       button:before
@@ -41,6 +51,10 @@
       border 0
       outline none
       background transparent
+      +sp()
+        width 8px
+        height 8px
+        padding 4px
 
       &:before
         font-size 14px
@@ -56,6 +70,11 @@
         color #c2c3c3
         -webkit-font-smoothing antialiased
         -moz-osx-font-smoothing grayscale
+        +sp()
+          font-size 8px
+          line-height 8px
+          width 8px
+          height 8px
 
 .slick-slide
   img
