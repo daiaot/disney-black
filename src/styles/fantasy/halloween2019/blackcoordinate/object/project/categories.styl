@@ -43,7 +43,7 @@ clearfix()
     display block
 
     h3&
-      margin-bottom per(24)
+      margin-bottom per(36)
 
   &__text
     text-align center
@@ -97,6 +97,24 @@ clearfix()
           background url('../images/img_lead03.png') 50% 0 no-repeat
           background-size per(487) auto
           padding-top per(125, 750)
+
+      &:nth-of-type(3)
+        .sec-block__lead
+          background url('../images/img_lead04.png') 50% 0 no-repeat
+          background-size per(481) auto
+          padding-top per(136, 750)
+
+      &:nth-of-type(4)
+        .sec-block__lead
+          background url('../images/img_lead05.png') 50% 0 no-repeat
+          background-size per(570) auto
+          padding-top per(126, 750)
+
+      &:nth-of-type(5)
+        .sec-block__lead
+          background url('../images/img_lead06.png') 50% 0 no-repeat
+          background-size per(480) auto
+          padding-top per(134, 750)
 
   &:nth-of-type(5)
     background url('../images/deco_punpkin.png') 50% bottom no-repeat
@@ -180,9 +198,9 @@ clearfix()
     // width 130% !important
     height 120% !important
     width 120% !important
+
     // width 100% !important
     // height 100% !important
-
     +pc()
       // top: -14.12%;
       // top: -4%;
@@ -238,15 +256,16 @@ clearfix()
   &__lists
     display flex
     flex-wrap wrap
-    justify-content space-between
+    justify-content center
     font-size 0
     padding per(24) 0
     background #fff
-    margin-bottom per(70)
+    margin-bottom per(80)
 
     li
       width per(235)
       padding-top per(24)
+      margin-left per(10)
 
       +sp()
         img
@@ -254,6 +273,9 @@ clearfix()
 
       &:nth-child(-n+3)
         padding-top 0
+
+      &:nth-child(3n+1)
+        margin-left 0
 
   &:last-of-type
     .gallery-wrap__lists
