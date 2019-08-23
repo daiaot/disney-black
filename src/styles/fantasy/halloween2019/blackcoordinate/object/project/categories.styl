@@ -134,13 +134,15 @@ clearfix()
       z-index 10
       position absolute
       left 50%
-      bottom 2.5%
+      // bottom 2.5%
+      bottom 2%
       transform translate(-50%, -50%)
 
     .slide-wrap
       margin-top per(-100)
       // margin-bottom per(130)
-      margin-bottom 30%
+      // margin-bottom 30%
+      margin-bottom per(260)
 
       &:after
         content ''
@@ -148,7 +150,7 @@ clearfix()
         width 100%
         position absolute
         // bottom per(-135)
-        bottom -16%
+        bottom -17%
         background url('../images/deco_web.png') 55.4% 0 no-repeat
         background-size per(831) auto
         // padding-top per(184,831)
@@ -190,24 +192,28 @@ clearfix()
     // right: 0
     // width: 100% !important
     // height: 100% !important
-    top 50%
+    // top 50%
+    top 40%
     left 50%
     transform translate(-50%, -50%)
+
     // width 130% !important
     // height 130% !important
     // width 130% !important
-    height 120% !important
-    width 120% !important
+    +sp()
+      height 134% !important
+      width 134% !important
 
     // width 100% !important
     // height 100% !important
     +pc()
       // top: -14.12%;
       // top: -4%;
-      width 142% !important
+      // width 142% !important
       // height per(1175, 315) !important
-      height 142% !important
-      top 40%
+      // height 142% !important
+      height 160% !important
+      top 50%
 
   &__scroll
     position absolute
@@ -363,6 +369,9 @@ clearfix()
     top 100px
     left 100px
 
+    &:focus
+      outline none
+
     &__bg
       position absolute
       top 0
@@ -398,6 +407,7 @@ clearfix()
     &__content
       position relative
       display flex
+      flex-wrap nowrap
       align-items center
       justify-content space-between
       top 50%
@@ -423,6 +433,7 @@ clearfix()
         line-height 1.8
         padding 0 14px
         color #fff
+        white-space nowrap
 
         +sp()
           font-size 12px
@@ -431,24 +442,7 @@ clearfix()
 .slide-wrap__inner
   &._item01
     .slide-wrap__balloon:nth-of-type(1)
-      top 23%
-      left 3.2666%
-
-      .slide-wrap__balloon__content__thumb
-        background url('../images/thumbnail02.png') 50% 0 no-repeat
-        background-size 100% auto
-
-    .slide-wrap__balloon:nth-of-type(2)
-      top 10%
-      left 50%
-
-      .slide-wrap__balloon__content__thumb
-        background url('../images/thumbnail01.png') 50% 0 no-repeat
-        background-size 100% auto
-
-  &._item02
-    .slide-wrap__balloon:nth-of-type(1)
-      top per(200, 1000)
+      top per(195, 1038)
       left per(32)
 
       .slide-wrap__balloon__content__thumb
@@ -456,11 +450,55 @@ clearfix()
         background-size 100% auto
 
     .slide-wrap__balloon:nth-of-type(2)
-      top per(90, 1000)
-      left 55%
+      top per(72, 1038)
+      left per(342)
 
       .slide-wrap__balloon__content__thumb
         background url('../images/thumbnail01.png') 50% 0 no-repeat
+        background-size 100% auto
+
+  &._item02
+    .slide-wrap__balloon:nth-of-type(1)
+      top per(195, 1038)
+      left 50%
+      transform translateX(-50%)
+
+      .slide-wrap__balloon__content__thumb
+        background url('../images/thumbnail03.png') 50% 0 no-repeat
+        background-size 100% auto
+
+  &._item03
+    .slide-wrap__balloon:nth-of-type(1)
+      top per(774, 1038)
+      left 50%
+      transform translateX(-50%)
+
+      .slide-wrap__balloon__content__thumb
+        background url('../images/thumbnail04.png') 50% 0 no-repeat
+        background-size 100% auto
+
+      .slide-wrap__balloon__bg:after
+        top -16px
+        transform translate(-50%, 0) rotate(180deg)
+
+        +sp()
+          top -8px
+
+  &._item04
+    .slide-wrap__balloon:nth-of-type(1)
+      top per(60, 1038)
+      left per(128)
+
+      .slide-wrap__balloon__content__thumb
+        background url('../images/thumbnail05.png') 50% 0 no-repeat
+        background-size 100% auto
+
+    .slide-wrap__balloon:nth-of-type(2)
+      top per(60, 1038)
+      left per(400)
+
+      .slide-wrap__balloon__content__thumb
+        background url('../images/thumbnail06.png') 50% 0 no-repeat
         background-size 100% auto
 
   // old

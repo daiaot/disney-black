@@ -10,7 +10,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var player;
 function onYouTubeIframeAPIReady() {
 
-  console.log('onYouTubeIframeAPIReady()')
+  // console.log('onYouTubeIframeAPIReady()')
 
 
   player = new YT.Player('player', {
@@ -27,18 +27,19 @@ function onYouTubeIframeAPIReady() {
       'disablekb': 1,
       'loop' : 1,
       'rel': 0,
+      'playsinline': 1,
       'playlist' : 'y2I_4gY9Rlc'
     },
     events: {
-      'onReady': onPlayerReady
-      // 'onStateChange': onPlayerStateChange
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
     }
   });
 }
 
 // 4. The API will call this function when the video player is ready.
 function onPlayerReady(event) {
-  console.log('onPlayerReady()')
+  // console.log('onPlayerReady()')
   player.mute();
   event.target.playVideo();
 }
@@ -47,14 +48,17 @@ function onPlayerReady(event) {
 //    The function indicates that when playing a video (state=1),
 //    the player should play for six seconds and then stop.
 // var done = false;
-// function onPlayerStateChange(event) {
-//   console.log('onPlayerStateChange()')
-//   if (event.data == YT.PlayerState.PLAYING && !done) {
-//     setTimeout(stopVideo, 6000);
-//     console.log('setTimeout()')
-//     done = true;
-//   }
-// }
+function onPlayerStateChange(event) {
+  // console.log('onPlayerStateChange()')
+  // if (event.data == YT.PlayerState.PLAYING && !done) {
+  //   setTimeout(stopVideo, 6000);
+  //   console.log('setTimeout()')
+  //   done = true;
+  // }
+  if (event.data == YT.PlayerState.ENDED) {
+    event.target.playVideo();
+  }
+}
 // function stopVideo() {
 //   console.log('stopVideo()')
 //   player.stopVideo();
