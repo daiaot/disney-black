@@ -24,12 +24,12 @@ function onYouTubeIframeAPIReady() {
       'modestbranding': 1,
       'controls': 0,
       'showinfo': 0,
-      'disablekb': 1,
+      // 'disablekb': 1,
       'loop' : 1,
       'rel': 0,
       'enablejsapi': 1,
       'playsinline': 1,
-      'origin': 'http://olc.pnrm.work',
+      // 'origin': 'http://olc.pnrm.work',
       'playlist' : 'y2I_4gY9Rlc'
     },
     events: {
