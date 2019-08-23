@@ -25,6 +25,7 @@ function onYouTubeIframeAPIReady() {
       'controls': 0,
       'showinfo': 0,
       // 'disablekb': 1,
+      'html5': 1,
       'loop' : 1,
       'rel': 0,
       'enablejsapi': 1,
