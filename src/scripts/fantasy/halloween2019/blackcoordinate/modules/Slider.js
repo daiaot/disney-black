@@ -28,6 +28,8 @@ export default class Slider {
             // centerMode: false,
             // centerPadding: '20px',
             variableWidth: false,
+            pauseOnHover: false,
+            pauseOnHover: false,
             // variableWidth: true,
           },
         },
