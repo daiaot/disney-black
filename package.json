@@ -9,7 +9,7 @@
     "cp:prod": "cpx './src/images/fantasy/halloween2019/blackcoordinate/**/*.{jpg,png,gif,svg,mp4,ico}' './dist/fantasy/halloween2019/blackcoordinate/images/' & cpx './static/**/*' './dist'",
     "mkdir": "mkdirp ./dist/fantasy/halloween2019/blackcoordinate/css/",
     "server": "node ./server/index.js",
-    "open": "opn http://localhost:3000",
+    "open": "opn http://0.0.0.0:3000 && browser-sync start --server",
     "preview": "run-s del mkdir cp:prod build:*:prod",
     "precommit": "lint-staged",
     "build:js:dev": "webpack --mode development --module-bind ts=ts-loader --module-bind js=babel-loader --resolve-extensions .ts,.js --watch --entry ./src/scripts/fantasy/halloween2019/blackcoordinate/index.ts --output ./dist/fantasy/halloween2019/blackcoordinate/js/app.js --output-chunk-filename [id].js --output-public-path /js/ --devtool inline-source-map",

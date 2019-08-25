@@ -1,3 +1,4 @@
+// const browserSync = require('browser-sync')
 const express = require('express')
 const url = require('url')
 const path = require('path')
@@ -42,4 +43,5 @@ app.get('*', (req, res, next) => {
 })
 
 
-app.listen(3000, 'localhost')
+// app.listen(3000, 'localhost')
+app.listen(3000, '0.0.0.0')
