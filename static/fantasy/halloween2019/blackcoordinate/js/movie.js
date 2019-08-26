@@ -1,36 +1,38 @@
 
 var tag = document.createElement('script');
 
-// tag.src = "https://www.youtube.com/iframe_api";
-// var firstScriptTag = document.getElementsByTagName('script')[0];
-// firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+tag.src = "https://www.youtube.com/iframe_api";
+tag.id = "youtubeScript";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 // 3. This function creates an <iframe> (and YouTube player)
 //    after the API code downloads.
 var player;
 function onYouTubeIframeAPIReady() {
 
-  // console.log('onYouTubeIframeAPIReady()')
+  console.log('onYouTubeIframeAPIReady()')
 
 
   player = new YT.Player('player', {
-    // height: '360',
-    // width: '640',
-    width: '100%',
-    height: '100%',
+    width: '560',
+    height: '315',
+    // width: '100%',
+    // height: '100%',
     videoId: '9WBxbhv27-w',
     playerVars: {
       'autoplay': 1,
       'modestbranding': 1,
       'controls': 0,
       'showinfo': 0,
-      // 'disablekb': 1,
+      'disablekb': 1,
       'html5': 1,
       'loop' : 1,
       'rel': 0,
-      'enablejsapi': 1,
       'playsinline': 1,
+      // 'enablejsapi': 1,
       // 'origin': 'http://olc.pnrm.work',
+      // 'origin': location.protocol + '//' + location.hostname + "/" + ":3000",
       'playlist' : 'y2I_4gY9Rlc'
     },
     events: {
@@ -42,7 +44,7 @@ function onYouTubeIframeAPIReady() {
 
 // 4. The API will call this function when the video player is ready.
 function onPlayerReady(event) {
-  // console.log('onPlayerReady()')
+  console.log('onPlayerReady()')
   player.mute();
   event.target.playVideo();
 }
@@ -52,7 +54,7 @@ function onPlayerReady(event) {
 //    the player should play for six seconds and then stop.
 // var done = false;
 function onPlayerStateChange(event) {
-  // console.log('onPlayerStateChange()')
+  console.log('onPlayerStateChange()')
   // if (event.data == YT.PlayerState.PLAYING && !done) {
   //   setTimeout(stopVideo, 6000);
   //   console.log('setTimeout()')
