@@ -1,0 +1,118 @@
+.modal
+  &__overlay
+    position fixed
+    opacity 0
+    z-index 0
+    top 0
+    bottom 0
+    left 0
+    right 0
+    background-color #000
+    visibility hidden
+    transition ease 0.25s opacity, ease 0.25s visibility
+
+    &.is-show
+      z-index 10
+      opacity 0.8
+      visibility visible
+
+  &__content
+    position fixed
+    opacity 0
+    z-index 0
+
+    &.is-show
+      overflow auto
+      top 0
+      bottom 0
+      left 0
+      right 0
+      z-index 11
+      opacity 1
+
+  &__close
+    position absolute
+    z-index 0
+    width 50px
+    height 50px
+    transition ease 0.25s opacity
+
+    &:before,
+    &:after
+      content ''
+      position absolute
+      display inline-block
+      top 12px
+      left 24px
+      width 3px
+      height 25px
+      background-color #fff
+
+    &:before
+      transform rotate(45deg)
+
+    &:after
+      transform rotate(-45deg)
+
+    &.is-show
+      // top -60px
+      // right 0
+      top -56px
+      right -56px
+      z-index 12
+      opacity 1
+      +pc()
+        top -14px
+        right -60px
+
+  &__wrap
+    position relative
+    opacity 0
+    z-index 0
+
+    &.is-show
+      z-index 12
+      opacity 1
+      left 50%
+      top 50%
+      // width 80%
+      // width 60%
+      width 600px
+      transform translate(-50%, -50%)
+      +sp()
+        width 60%
+
+
+  &__inner
+    width 100%
+    // padding-top 56.25%
+    // padding-top 150%
+    padding-top 900px
+    +sp()
+      padding-top per(900)
+
+
+
+  &__photo
+    position absolute
+    top 0
+    bottom 0
+    left 0
+    right 0
+
+
+    img
+      // width 50%
+      // height 50%
+      position absolute
+      top 50%
+      left 50%
+      transform translate(-50%, -50%)
+      width 100%
+
+  &__movie iframe
+    position absolute
+    top 0
+    bottom 0
+    left 0
+    right 0

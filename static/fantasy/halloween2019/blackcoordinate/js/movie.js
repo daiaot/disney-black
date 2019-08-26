@@ -11,7 +11,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var player;
 function onYouTubeIframeAPIReady() {
 
-  console.log('onYouTubeIframeAPIReady()')
+  // console.log('onYouTubeIframeAPIReady()')
 
 
   player = new YT.Player('player', {
@@ -44,7 +44,7 @@ function onYouTubeIframeAPIReady() {
 
 // 4. The API will call this function when the video player is ready.
 function onPlayerReady(event) {
-  console.log('onPlayerReady()')
+  // console.log('onPlayerReady()')
   player.mute();
   event.target.playVideo();
 }
@@ -54,7 +54,7 @@ function onPlayerReady(event) {
 //    the player should play for six seconds and then stop.
 // var done = false;
 function onPlayerStateChange(event) {
-  console.log('onPlayerStateChange()')
+  // console.log('onPlayerStateChange()')
   // if (event.data == YT.PlayerState.PLAYING && !done) {
   //   setTimeout(stopVideo, 6000);
   //   console.log('setTimeout()')

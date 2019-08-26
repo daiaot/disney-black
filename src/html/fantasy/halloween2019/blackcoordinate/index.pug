@@ -92,9 +92,9 @@ block main
               | アメリカンウォーターフロントで撮影した写真を見てみよう!
             ul.gallery-wrap__lists._showmore
               li
-                img(src=`images/img_thumb_01.jpg` alt="")
+                img(data-module="modal" data-large="images/img_thumb_01_l.jpg" src=`images/img_thumb_01.jpg` alt="")
               li
-                img(src=`images/img_thumb_02.jpg` alt="")
+                img(data-module="modal" data-large="images/img_thumb_02_l.jpg" src=`images/img_thumb_02.jpg` alt="")
               li
                 img(src=`images/img_thumb_03.jpg` alt="")
               li
@@ -217,6 +217,22 @@ block main
       //-     |pcクラスをつけるとPCのみ表示されます。
       //-   p.spn
       //-     |spnクラスをつけるとSPNのみ表示されます。
+
+
+    //- modal
+    .modal
+      .modal__overlay(data-modal-role="overlay")
+      .modal__content
+        .modal__wrap
+          .modal__inner
+            .modal__photo
+            //- .modal__movie(data-modal-type="movie" data-modal-movie-param="tDBWoDO79hQ")
+          .modal__close(data-modal-role="close")
+
+
+
+
+
     //{* /コンテンツエリア *}
 
     | #{"\n"}
@@ -232,4 +248,6 @@ block main
   //- include /ssi/adplan_inc.pug
   //{* /計測用ADPLAN タグ *}
   | #{"\n"}
+
+
 
