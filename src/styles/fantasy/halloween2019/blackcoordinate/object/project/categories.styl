@@ -197,7 +197,7 @@ clearfix()
     // top 50%
     top 50%
     left 50%
-    transform translate(-50%, -50%)
+    transform translate(-50%, -54%)
     // transform scale(1.8, 1.8) translate(-50%, -50%)
     // transform-origin left
 
@@ -373,6 +373,9 @@ clearfix()
     position absolute
     top 100px
     left 100px
+    transition all 1.4s !important
+    transform translateY(-10px)
+    opacity 0
 
     &:focus
       outline none
@@ -419,7 +422,8 @@ clearfix()
       left 50%
       transform translateX(-50%)
       border-radius 8px
-      padding 6px 32px
+      // padding 6px 32px
+      padding 6px 28px
 
       +sp()
         padding 4px 16px
@@ -436,13 +440,20 @@ clearfix()
       &__name
         font-size 23px
         line-height 1.8
-        padding 0 14px
+        // padding 0 14px
+        padding-left 14px
         color #fff
         white-space nowrap
 
         +sp()
           font-size 12px
           padding 0 7px
+
+
+.slick-slide.slick-current
+  .slide-wrap__image .slide-wrap__balloon
+    opacity 1
+    transform translateY(0)
 
 .slide-wrap__inner
   &._item01
@@ -465,8 +476,9 @@ clearfix()
   &._item02
     .slide-wrap__balloon:nth-of-type(1)
       top per(195, 1038)
-      left 50%
-      transform translateX(-50%)
+      left per(140)
+      // left 50%
+      // transform translate(-50%)
 
       .slide-wrap__balloon__content__thumb
         background url('../images/thumbnail03.png') 50% 0 no-repeat
@@ -475,8 +487,9 @@ clearfix()
   &._item03
     .slide-wrap__balloon:nth-of-type(1)
       top per(774, 1038)
-      left 50%
-      transform translateX(-50%)
+      left per(204)
+      // left 50%
+      // transform translateX(-50%)
 
       .slide-wrap__balloon__content__thumb
         background url('../images/thumbnail04.png') 50% 0 no-repeat
@@ -492,6 +505,7 @@ clearfix()
   &._item04
     .slide-wrap__balloon:nth-of-type(1)
       top per(60, 1038)
+      // left per(148)
       left per(128)
 
       .slide-wrap__balloon__content__thumb
@@ -500,7 +514,8 @@ clearfix()
 
     .slide-wrap__balloon:nth-of-type(2)
       top per(60, 1038)
-      left per(400)
+      // left per(400)
+      left per(420)
 
       .slide-wrap__balloon__content__thumb
         background url('../images/thumbnail06.png') 50% 0 no-repeat
