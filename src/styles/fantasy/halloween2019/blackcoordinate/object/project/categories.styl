@@ -373,9 +373,12 @@ clearfix()
     position absolute
     top 100px
     left 100px
-    transition all 1.4s !important
+    transition all 2.8s ease !important
+    // transition all 2.8s cubic-bezier(.54,.36,.43,.84) !important
+    // transition all 2.8s cubic-bezier(0.545, 0.080, 0.520, 0.975) !important
     transform translateY(-10px)
     opacity 0
+ 
 
     &:focus
       outline none
@@ -452,8 +455,11 @@ clearfix()
 
 .slick-slide.slick-current
   .slide-wrap__image .slide-wrap__balloon
+    // animation balloonMotion 2.4s !important
     opacity 1
     transform translateY(0)
+
+
 
 .slide-wrap__inner
   &._item01
@@ -631,3 +637,16 @@ clearfix()
 
   &:hover
     cursor pointer
+
+
+
+@keyframes balloonMotion
+  0%
+    opacity 0
+    // transform translateY(-10px)
+  80%
+    opacity 0
+    // transform translateY(-10px)
+  100%
+    opacity 1
+    // transform translateY(0)
