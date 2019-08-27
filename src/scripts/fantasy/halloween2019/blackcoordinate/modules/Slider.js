@@ -19,19 +19,13 @@ export default class Slider {
       infinite: true,
       speed: 300,
       arrows: false,
-      // pauseOnHover: true,
-      pauseOnHover: false,
-      pauseOnDotsHover: false,
+      pauseOnHover: true,
+      pauseOnDotsHover: true,
       responsive: [
         {
           breakpoint: 736,
           settings: {
-            // slidesToShow: 1,
-            // centerMode: false,
-            // centerPadding: '20px',
             variableWidth: false,
-            pauseOnHover: false,
-            // variableWidth: true,
           },
         },
       ],
