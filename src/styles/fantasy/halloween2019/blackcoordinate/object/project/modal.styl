@@ -33,20 +33,33 @@
   &__close
     position absolute
     z-index 0
-    width 50px
-    height 50px
+    width 46px
+    height 46px
     transition ease 0.25s opacity
+    background #fff
+    border-radius 23px
+
+    +sp()
+      width 24px
+      height 24px
+      border-radius 12px
 
     &:before,
     &:after
       content ''
       position absolute
       display inline-block
-      top 12px
-      left 24px
-      width 3px
-      height 25px
-      background-color #fff
+      top 2px
+      left 22px
+      width 2px
+      height 42px
+      background-color #1b1b1b
+
+      +sp()
+        top 1px
+        left 12px
+        width 1px
+        height 22px
 
     &:before
       transform rotate(45deg)
@@ -57,13 +70,14 @@
     &.is-show
       // top -60px
       // right 0
-      top -56px
-      right -56px
+      top -10px
+      right -10px
       z-index 12
       opacity 1
+
       +pc()
-        top -14px
-        right -60px
+        top -19px
+        right -17px
 
   &__wrap
     position relative
@@ -77,21 +91,20 @@
       top 50%
       // width 80%
       // width 60%
-      width 600px
+      width 626px
       transform translate(-50%, -50%)
-      +sp()
-        width 60%
 
+      +sp()
+        width per(626)
 
   &__inner
     width 100%
     // padding-top 56.25%
     // padding-top 150%
-    padding-top 900px
+    padding-top 940px
+
     +sp()
-      padding-top per(900)
-
-
+      padding-top per(1126)
 
   &__photo
     position absolute
@@ -99,7 +112,6 @@
     bottom 0
     left 0
     right 0
-
 
     img
       // width 50%

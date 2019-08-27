@@ -2,29 +2,14 @@ import $ from 'jquery'
 
 export default class Modal {
   constructor(elem) {
+
     this.elem = elem
-
-    console.log(this.elem)
-
-    // 開く対象を取得
-    // this.target = document.querySelectorAll(
-    //   `[data-modal-val="${this.elem.getAttribute('data-modal-key')}"]`
-    // )[0]
-
-
     this.targetPhoto = this.elem.getAttribute('data-large')
-
-    console.log(this.targetPhoto)
-
-    // this.targetWrap = this.target.querySelectorAll('.modal__wrap')[0]
-
     this.target = document.querySelectorAll('.modal__content')[0]
-
-    console.log(this.target)
-
     this.targetWrap = this.target.querySelectorAll('.modal__wrap')[0]
     this.close = this.target.querySelectorAll(`[data-modal-role="close"]`)[0]
     this.overlay = document.querySelectorAll(`[data-modal-role="overlay"]`)[0]
+    this.photoParam = document.querySelectorAll('.modal__photo')[0]
     this.showClass = 'is-show'
     this.closeClass = 'is-close'
     this.showFlg = false
@@ -60,6 +45,7 @@ export default class Modal {
 
     document.documentElement.style.overflow = 'hidden'
 
+
     if (this.targetPhoto) {
       this.addPhoto()
     }
@@ -67,8 +53,8 @@ export default class Modal {
 
   addPhoto() {
     // const movieParam = this.movieTarget.getAttribute('data-modal-movie-param')
-    const photoParam = document.querySelectorAll('.modal__photo')[0]
     let addImage = document.createElement('div')
+
     // const addElem = `
     //   <img src="${this.targetPhoto}" alt="">
     // `
@@ -76,7 +62,7 @@ export default class Modal {
     addImage.innerHTML = `
       <img src="${this.targetPhoto}" alt="">
       `
-      photoParam.appendChild(addImage)
+    this.photoParam.appendChild(addImage)
 
     /* movieParam.appendChild(addElem) */
   }
@@ -90,12 +76,12 @@ export default class Modal {
     this.close.classList.remove(this.showClass)
     document.documentElement.style.overflow = 'auto'
 
-    if (this.movieTarget) {
+    if (this.photoParam) {
       this.removeMovie()
     }
   }
 
   removeMovie() {
-    this.movieTarget.textContent = null
+    this.photoParam.textContent = null
   }
 }
