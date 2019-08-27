@@ -277,7 +277,7 @@ clearfix()
     bottom 0
     left 0
     width 100%
-    padding 0 0 55px
+    // padding 0 0 55px
     font-family brandon-grotesque, sans-serif
     font-size 12px
     font-weight 300
@@ -285,23 +285,21 @@ clearfix()
     text-align center
     letter-spacing 0.08em
 
-    +sp()
-      padding 0 0 50px
-
-    &:after
-      position absolute
-      right 0
-      bottom 0
-      left 0
+    span
+      text-indent 100%
+      white-space nowrap
+      overflow hidden
       display block
-      width 2px
-      height 40px
-      margin 0 auto
-      content ''
-      background-color #fff
+      width 190px
+      height 0
+      margin auto
+      padding-top 172px
+      background url('../images/img_scroll.png') 50% 0 no-repeat
+      background-size 100% auto
 
       +sp()
-        width 1px
+        width percentage((190 / 750))
+        padding-top per(172)
 
 // #player
 // width: 100% !important

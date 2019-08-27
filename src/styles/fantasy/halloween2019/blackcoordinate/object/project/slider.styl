@@ -76,29 +76,32 @@
         // width 8px
         // height 8px
 
-
-
-
-
 .slick-slide
   opacity 0
+
   &.slick-cloned
     opacity 1
+
   &.slick-current
     opacity 1
+
   img
     width 100%
 
 // _:lang(x)::-ms-backdrop,
 // .slick-slide
-//   opacity 0
-//   &.slick-cloned
-//     opacity 1
-//   &.slick-current
-//     opacity 1
+// opacity 0
+// &.slick-cloned
+// opacity 1
+// &.slick-current
+// opacity 1
+.slide-item .slick-dots li
+  cursor auto
+  pointer-events none !important
+  touch-action none !important
 
-
-.slide-item
-  .slick-dots li button
-    button
-      cursor default
+.slide-item .slick-dots li button
+  // cursor default
+  cursor auto
+  pointer-events none !important
+  touch-action none

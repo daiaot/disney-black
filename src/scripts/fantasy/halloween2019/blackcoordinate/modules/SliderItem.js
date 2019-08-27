@@ -9,7 +9,6 @@ export default class SliderItem {
   }
 
   init() {
-
     this.$el.on('init',function(){
       $('.slide-wrap__balloon').addClass('on');
       // $('.slide-wrap__balloon').addClass('hide');
@@ -19,12 +18,13 @@ export default class SliderItem {
       dots: true,
       infinite: true,
       variableWidth: true,
-      autoplay: false,
+      autoplay: true,
       pauseOnFocus: false,
       slidesToShow: 1,
       slidesToScroll: 1,
       infinite: true,
       speed: 300,
+      swipe: false,
       arrows: false,
       // pauseOnHover: true,
       pauseOnHover: false,
@@ -49,12 +49,12 @@ export default class SliderItem {
     // console.log('Slider - bindEvents()')
 
     this.$el.on('beforeChange',function(){
-      console.log('Slider - bindEvents() - beforeChange')
+      // console.log('Slider - bindEvents() - beforeChange')
       // $('.slide-wrap__balloon').addClass('hide');
       $('.slide-wrap__balloon').removeClass('on');
     });
     this.$el.on('afterChange',function(){
-      console.log('Slider - bindEvents() - afterChange')
+      // console.log('Slider - bindEvents() - afterChange')
       $('.slide-wrap__balloon').addClass('on');
       // $('.slide-wrap__balloon').removeClass('hide');
     });
