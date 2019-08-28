@@ -13,9 +13,8 @@
     <link rel="stylesheet" href="css/app.css">
     <!--{* PCSP用js *}-->
     <script type="text/javascript" src="/ssi/js/event_ps.js"></script>
-    <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
   </head>
-  <body>
+  <body data-module="LoadScroll">
 
     <div class="wrap">
       <!--{* ヘッダーインクルード *}-->
@@ -40,7 +39,7 @@
           <div class="sec-block">
             <div class="youtube-wrap">
               <div class="youtube-content">
-                <div id="player" data-module="movie"></div>
+                <div id="player"></div>
               </div><div class="youtube-content__scroll"> <span>SCROLL</span> </div>
               
             </div>
@@ -49,13 +48,12 @@
             <div class="sec-block__lead"></div>
             <div class="slide-wrap" data-module="slider">
               <div class="slide-wrap__image"><img src="images/img_coordinate01.jpg" alt=""></div>
-              <div class="slide-wrap__image"><img src="images/img_coordinate02.jpg" alt=""></div>
               <div class="slide-wrap__image"><img src="images/img_coordinate03.jpg" alt=""></div>
             </div>
           </div>
           <div class="sec-block">
             <h2 class="sec-block__title">東京ディズニーリゾート公式 Instagramにあなたが登場!?</h2>
-            <p class="sec-block__text">カメラキャストに撮影された写真は<br>東京ディズニーリゾート公式サイトと<br>インスタグラムストーリーズにアップされるかも!?</p>
+            <p class="sec-block__text">オフィシャルフォトグラファーに撮影された写真は<br>東京ディズニーリゾート公式サイトと<br>インスタグラムストーリーズにアップされるかも!?</p>
             <div class="insta-wrap">
               <div class="insta-wrap__kv"></div><a class="sec-btn__dl" href="http://www.tokyodisneyresort.jp/photo/index02.html" target="_blank"></a>
               <div class="insta-wrap__stories">
@@ -75,15 +73,14 @@
                 アメリカンウォーターフロントで撮影した写真を見てみよう!
               </h3>
               <ul class="gallery-wrap__lists _showmore">
-                <li><img src="images/img_thumb_01.jpg" alt=""></li>
-                <li><img src="images/img_thumb_02.jpg" alt=""></li>
-                <li><img src="images/img_thumb_03.jpg" alt=""></li>
-                <li><img src="images/img_thumb_04.jpg" alt=""></li>
-                <li><img src="images/img_thumb_05.jpg" alt=""></li>
-                <li><img src="images/img_thumb_06.jpg" alt=""></li>
-                <li><img src="images/img_thumb_07.jpg" alt=""></li>
-                <li><img src="images/img_thumb_08.jpg" alt=""></li>
-                <li><img src="images/img_thumb_09.jpg" alt=""></li>
+                <li><img data-module="modal" data-large="images/img_thumb_01_l.jpg" src="images/img_thumb_01.jpg" alt=""></li>
+                <li><img data-module="modal" data-large="images/img_thumb_02_l.jpg" src="images/img_thumb_02.jpg" alt=""></li>
+                <li><img data-module="modal" data-large="images/img_thumb_03_l.jpg" src="images/img_thumb_03.jpg" alt=""></li>
+                <li><img data-module="modal" data-large="images/img_thumb_04_l.jpg" src="images/img_thumb_04.jpg" alt=""></li>
+                <li><img data-module="modal" data-large="images/img_thumb_05_l.jpg" src="images/img_thumb_05.jpg" alt=""></li>
+                <li><img data-module="modal" data-large="images/img_thumb_06_l.jpg" src="images/img_thumb_06.jpg" alt=""></li>
+                <li><img data-module="modal" data-large="images/img_thumb_07_l.jpg" src="images/img_thumb_07.jpg" alt=""></li>
+                <li><img data-module="modal" data-large="images/img_thumb_08_l.jpg" src="images/img_thumb_08.jpg" alt=""></li>
               </ul>
             </div>
             <div class="gallery-wrap">
@@ -92,21 +89,46 @@
                 アラビアンコーストで撮影した写真を見てみよう!
               </h3>
               <ul class="gallery-wrap__lists _showmore">
-                <li><img src="images/img_thumb_01.jpg" alt=""></li>
-                <li><img src="images/img_thumb_02.jpg" alt=""></li>
-                <li><img src="images/img_thumb_03.jpg" alt=""></li>
-                <li><img src="images/img_thumb_04.jpg" alt=""></li>
-                <li><img src="images/img_thumb_05.jpg" alt=""></li>
-                <li><img src="images/img_thumb_06.jpg" alt=""></li>
-                <li><img src="images/img_thumb_07.jpg" alt=""></li>
-                <li><img src="images/img_thumb_08.jpg" alt=""></li>
-                <li><img src="images/img_thumb_09.jpg" alt=""></li>
+                <li><img data-module="modal" data-large="images/img_thumb_09_l.jpg" src="images/img_thumb_09.jpg" alt=""></li>
+                <li><img data-module="modal" data-large="images/img_thumb_10_l.jpg" src="images/img_thumb_10.jpg" alt=""></li>
+                <li><img data-module="modal" data-large="images/img_thumb_11_l.jpg" src="images/img_thumb_11.jpg" alt=""></li>
+                <li><img data-module="modal" data-large="images/img_thumb_12_l.jpg" src="images/img_thumb_12.jpg" alt=""></li>
+                <li><img data-module="modal" data-large="images/img_thumb_13_l.jpg" src="images/img_thumb_13.jpg" alt=""></li>
+                <li><img data-module="modal" data-large="images/img_thumb_14_l.jpg" src="images/img_thumb_14.jpg" alt=""></li>
+              </ul>
+            </div>
+            <div class="gallery-wrap">
+              <h3 class="sec-block__lead">
+                Mermaid Lagoon
+                マーメイドラグーンで撮影した写真を見てみよう!
+              </h3>
+              <ul class="gallery-wrap__lists _showmore">
+                <li><img data-module="modal" data-large="images/img_thumb_15_l.jpg" src="images/img_thumb_15.jpg" alt=""></li>
+              </ul>
+            </div>
+            <div class="gallery-wrap">
+              <h3 class="sec-block__lead">
+                Mediterranean Harbor
+                メディテレーニアンハーバーで撮影した写真を見てみよう!
+              </h3>
+              <ul class="gallery-wrap__lists _showmore">
+                <li><img data-module="modal" data-large="images/img_thumb_16_l.jpg" src="images/img_thumb_16.jpg" alt=""></li>
+                <li><img data-module="modal" data-large="images/img_thumb_17_l.jpg" src="images/img_thumb_17.jpg" alt=""></li>
+              </ul>
+            </div>
+            <div class="gallery-wrap">
+              <h3 class="sec-block__lead">
+                Lost River Delta
+                ロストリバーデルタで撮影した写真を見てみよう!
+              </h3>
+              <ul class="gallery-wrap__lists _showmore">
+                <li><img data-module="modal" data-large="images/img_thumb_18_l.jpg" src="images/img_thumb_18.jpg" alt=""></li>
               </ul>
             </div>
           </div>
           <div class="sec-block">
             <h2 class="sec-block__title">東京ディズニーリゾート公式 Instagramにあなたが登場!?</h2>
-            <div class="slide-wrap" data-module="slider">
+            <div class="slide-wrap slide-item" data-module="SliderItem">
               <div class="slide-wrap__image">
                 <div class="slide-wrap__inner _item01"><a class="slide-wrap__balloon" href="https://www.tokyodisneyresort.jp/tags/goods/8044/" target="_blank">
                     <div class="slide-wrap__balloon__bg"></div>
@@ -121,48 +143,49 @@
                     </div></a></div><img src="images/img_item01.jpg" alt="">
               </div>
               <div class="slide-wrap__image">
-                <div class="slide-wrap__inner _item02"><a class="slide-wrap__balloon" href="https://www.tokyodisneyresort.jp/tags/goods/8044/" target="_blank">
+                <div class="slide-wrap__inner _item02"><a class="slide-wrap__balloon" href="https://www.tokyodisneyresort.jp/menu/3750/" target="_blank">
                     <div class="slide-wrap__balloon__bg"></div>
                     <div class="slide-wrap__balloon__content">
                       <div class="slide-wrap__balloon__content__thumb"></div>
-                      <div class="slide-wrap__balloon__content__name">キャップ</div>
-                    </div></a><a class="slide-wrap__balloon" href="https://www.tokyodisneyresort.jp/tags/goods/8030/" target="_blank">
-                    <div class="slide-wrap__balloon__bg"></div>
-                    <div class="slide-wrap__balloon__content">
-                      <div class="slide-wrap__balloon__content__thumb"></div>
-                      <div class="slide-wrap__balloon__content__name">サングラス</div>
+                      <div class="slide-wrap__balloon__content__name">ミッキーチョロス（シナモン）</div>
                     </div></a></div><img src="images/img_item02.jpg" alt="">
               </div>
               <div class="slide-wrap__image">
-                <div class="slide-wrap__inner _item02"><a class="slide-wrap__balloon" href="https://www.tokyodisneyresort.jp/tags/goods/8044/" target="_blank">
+                <div class="slide-wrap__inner _item03"><a class="slide-wrap__balloon" href="https://www.tokyodisneyresort.jp/tds/menu/popcorn.html" target="_blank">
                     <div class="slide-wrap__balloon__bg"></div>
                     <div class="slide-wrap__balloon__content">
                       <div class="slide-wrap__balloon__content__thumb"></div>
-                      <div class="slide-wrap__balloon__content__name">キャップ</div>
-                    </div></a><a class="slide-wrap__balloon" href="https://www.tokyodisneyresort.jp/tags/goods/8030/" target="_blank">
-                    <div class="slide-wrap__balloon__bg"></div>
-                    <div class="slide-wrap__balloon__content">
-                      <div class="slide-wrap__balloon__content__thumb"></div>
-                      <div class="slide-wrap__balloon__content__name">サングラス</div>
+                      <div class="slide-wrap__balloon__content__name">ポップコーン</div>
                     </div></a></div><img src="images/img_item03.jpg" alt="">
               </div>
               <div class="slide-wrap__image">
-                <div class="slide-wrap__inner _item02"><a class="slide-wrap__balloon" href="https://www.tokyodisneyresort.jp/tags/goods/8044/" target="_blank">
+                <div class="slide-wrap__inner _item04"><a class="slide-wrap__balloon" href="https://www.tokyodisneyresort.jp/tags/goods/8044/" target="_blank">
                     <div class="slide-wrap__balloon__bg"></div>
                     <div class="slide-wrap__balloon__content">
                       <div class="slide-wrap__balloon__content__thumb"></div>
                       <div class="slide-wrap__balloon__content__name">キャップ</div>
-                    </div></a><a class="slide-wrap__balloon" href="https://www.tokyodisneyresort.jp/tags/goods/8030/" target="_blank">
+                    </div></a><a class="slide-wrap__balloon" href="https://www.tokyodisneyresort.jp/tags/goods/8044/" target="_blank">
                     <div class="slide-wrap__balloon__bg"></div>
                     <div class="slide-wrap__balloon__content">
                       <div class="slide-wrap__balloon__content__thumb"></div>
-                      <div class="slide-wrap__balloon__content__name">サングラス</div>
+                      <div class="slide-wrap__balloon__content__name">キャップ</div>
                     </div></a></div><img src="images/img_item04.jpg" alt="">
               </div>
             </div><a class="sec-btn__specialgoods" href="https://www.tokyodisneyresort.jp/treasure/fantasy/halloween2019/tds/goods03.html" target="_blank"></a>
           </div>
         </div>
       </article>
+      <div class="modal">
+        <div class="modal__overlay" data-modal-role="overlay"></div>
+        <div class="modal__content">
+          <div class="modal__wrap">
+            <div class="modal__inner">
+              <div class="modal__photo"></div>
+            </div>
+            <div class="modal__close" data-modal-role="close"></div>
+          </div>
+        </div>
+      </div>
       <!--{* /コンテンツエリア *}-->
 
       <!--{* フッターインクルード *}-->
@@ -172,9 +195,10 @@
     <!-- /.wrap -->
 
     <!--{* 計測用ADPLAN タグ *}-->
-    <!--include virtual="/ssi/adplan_inc.html"-->
+    <!--#include virtual="/ssi/adplan_inc.html"-->
     <!--{* /計測用ADPLAN タグ *}-->
 
+    <script type="text/javascript" src="js/movie.js"></script>
     <script src="js/app.js"></script>
 
   </body>
