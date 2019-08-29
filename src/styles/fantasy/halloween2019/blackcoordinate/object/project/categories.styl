@@ -182,19 +182,71 @@ clearfix()
       position relative
       z-index 1
 
+    .sec-block__title-sns
+      background url('../images/img_title04.png') 50% 0 no-repeat
+      background-size per(538) auto
+      padding-top per(202, 750)
+
+    .sns-wrap
+      margin-bottom per(60)
+      position relative
+
+      &__inner
+        position absolute
+        top 70%
+        left 50%
+        transform translate(-50%, -50%)
+        width per(310)
+
+      &__list
+        display flex
+        flex-wrap nowrap
+        justify-content space-between
+
+        a
+          display block
+
+          &.tw
+            background url('../images/icon_tw.png') 50% 0 no-repeat
+            background-size 100% auto
+            width 86px
+            padding-top 86px
+
+            +sp()
+              width 43px
+              padding-top 43px
+
+          &.fb
+            background url('../images/icon_fb.png') 50% 0 no-repeat
+            background-size 100% auto
+            width 86px
+            padding-top 86px
+
+            +sp()
+              width 43px
+              padding-top 43px
+
+          &.line
+            background url('../images/icon_line.png') 50% 0 no-repeat
+            background-size 100% auto
+            width 86px
+            padding-top 86px
+
+            +sp()
+              width 43px
+              padding-top 43px
+
     .sec-btn__specialgoods
       z-index 10
       position absolute
       left 50%
       // bottom 2.5%
-      bottom 2%
+      bottom 4.6%
       transform translate(-50%, -50%)
 
     .slide-wrap
       margin-top per(-100)
-      // margin-bottom per(130)
-      // margin-bottom 30%
-      margin-bottom per(260)
+      margin-bottom per(340)
 
       &:after
         content ''
@@ -252,6 +304,7 @@ clearfix()
     transform translate(-50%, -50%)
     width 112% !important
     height 112% !important
+
     +sp()
       height 115% !important
       width 115% !important
