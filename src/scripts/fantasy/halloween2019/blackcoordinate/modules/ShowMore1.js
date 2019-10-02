@@ -1,6 +1,6 @@
 import $ from 'jquery'
 
-export default class ShowMore {
+export default class ShowMore1 {
   constructor(elem) {
     this.elem = elem
     this.bindEvents()
@@ -9,20 +9,24 @@ export default class ShowMore {
   bindEvents() {
     $(window).on('load resize', function() {
       $(function() {
-        $('._showmore').each(function() {
+        $('._showmore--1').each(function() {
           $(this)
-            .find('li:gt(5)')
+            .find('li:gt(8)')
             .each(function() {
               $(this).hide()
             })
-          var btn = $('.gallery-wrap').find('.sec-btn__showmore')
+          var btn = $('.gallery-wrap').find('.__btn--1')
+          var bg = $('.gallery-wrap').find('.__wrap--1')
           btn.click(function() {
             // $(this).parent().find("li").fadeIn(1000);
             $(this)
+              // .parent()
               .parent()
               .find('li')
               .fadeIn('slow')
-            btn.remove()
+            // btn.remove()
+            btn.fadeOut('fast')
+            bg.fadeOut('slow')
             // $(this).fadeOut('fast');
           })
         })

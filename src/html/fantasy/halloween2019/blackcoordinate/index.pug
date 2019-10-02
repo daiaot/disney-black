@@ -86,12 +86,16 @@ block main
           h2.sec-block__title
             | みんなのブラックコーデを見てみよう！
 
-          //- .gallery-wrap(data-module='showMore')
-          .gallery-wrap
+          //- .gallery-wrap
+          .gallery-wrap(data-module='showMore1')
             h3.sec-block__lead
               | American Waterfront
               | アメリカンウォーターフロントで撮影した写真を見てみよう!
-            ul.gallery-wrap__lists._showmore
+            ul.gallery-wrap__lists._showmore._showmore--1
+              li
+                img(data-module="modal" data-large="https://media2.tokyodisneyresort.jp/home/halloween/2019/blackblackblackblack/3/_AMY2668.jpg" src=`images/img_thumb_19.jpg` alt="" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'ポップアップ', action: 'blackcoorde_popup_aw3_3', label: ''}});")
+              li
+                img(data-module="modal" data-large="https://media2.tokyodisneyresort.jp/home/halloween/2019/blackblackblackblack/3/_AMY2677.jpg" src=`images/img_thumb_20.jpg` alt="" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'ポップアップ', action: 'blackcoorde_popup_aw4_1', label: ''}});")
               li
                 img(data-module="modal" data-large="https://media2.tokyodisneyresort.jp/home/halloween/2019/blackblackblackblack/2/img_thumb_01_l.jpg" src=`https://media2.tokyodisneyresort.jp/home/halloween/2019/blackblackblackblack/2/img_thumb_01.jpg` alt="" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'ポップアップ', action: 'blackcoorde_popup_aw1_1', label: ''}});")
               li
@@ -108,19 +112,15 @@ block main
                 img(data-module="modal" data-large="https://media2.tokyodisneyresort.jp/home/halloween/2019/blackblackblackblack/2/img_thumb_07_l.jpg" src=`https://media2.tokyodisneyresort.jp/home/halloween/2019/blackblackblackblack/2/img_thumb_07.jpg` alt="" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'ポップアップ', action: 'blackcoorde_popup_aw3_1', label: ''}});")
               li
                 img(data-module="modal" data-large="https://media2.tokyodisneyresort.jp/home/halloween/2019/blackblackblackblack/2/img_thumb_08_l.jpg" src=`https://media2.tokyodisneyresort.jp/home/halloween/2019/blackblackblackblack/2/img_thumb_08.jpg` alt="" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'ポップアップ', action: 'blackcoorde_popup_aw3_2', label: ''}});")
-              li
-                img(data-module="modal" data-large="https://media2.tokyodisneyresort.jp/home/halloween/2019/blackblackblackblack/3/_AMY2668.jpg" src=`images/img_thumb_19.jpg` alt="" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'ポップアップ', action: 'blackcoorde_popup_aw3_3', label: ''}});")
 
-              li
-                img(data-module="modal" data-large="https://media2.tokyodisneyresort.jp/home/halloween/2019/blackblackblackblack/3/_AMY2677.jpg" src=`images/img_thumb_20.jpg` alt="" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'ポップアップ', action: 'blackcoorde_popup_aw4_1', label: ''}});")
+            .showmore-wrap.__wrap--1
+            .sec-btn__showmore.__btn--1
 
-            //- .sec-btn__showmore
-
-          .gallery-wrap
+          .gallery-wrap(data-module='showMore2')
             h3.sec-block__lead
               |Arabian Coast
               |アラビアンコーストで撮影した写真を見てみよう!
-            ul.gallery-wrap__lists._showmore
+            ul.gallery-wrap__lists._showmore._showmore--2
               li
                 img(data-module="modal" data-large="https://media2.tokyodisneyresort.jp/home/halloween/2019/blackblackblackblack/2/img_thumb_09_l.jpg" src=`https://media2.tokyodisneyresort.jp/home/halloween/2019/blackblackblackblack/2/img_thumb_09.jpg` alt="" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'ポップアップ', action: 'blackcoorde_popup_ac1_1', label: ''}});")
               li
@@ -141,6 +141,9 @@ block main
                 img(data-module="modal" data-large="https://media2.tokyodisneyresort.jp/home/halloween/2019/blackblackblackblack/3/IMG_33325.jpg" src=`images/img_thumb_24.jpg` alt="" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'ポップアップ', action: 'blackcoorde_popup_ac3_3', label: ''}});")
               li
                 img(data-module="modal" data-large="https://media2.tokyodisneyresort.jp/home/halloween/2019/blackblackblackblack/3/IMG_33288.jpg" src=`images/img_thumb_25.jpg` alt="" onmousedown="dataLayer.push({event: 'trackClick', clickParams: {category: 'ポップアップ', action: 'blackcoorde_popup_ac4_1', label: ''}});")
+
+            .showmore-wrap.__wrap--2
+            .sec-btn__showmore.__btn--2
 
           .gallery-wrap
             h3.sec-block__lead
