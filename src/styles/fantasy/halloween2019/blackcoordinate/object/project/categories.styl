@@ -376,6 +376,7 @@ clearfix()
       width per(235)
       padding-top per(24)
       margin-left per(10)
+      transition all 0.5s
 
       +sp()
         img
@@ -386,6 +387,9 @@ clearfix()
 
       &:nth-child(3n+1)
         margin-left 0
+
+      &:hover
+        opacity 0.8
 
   &:last-of-type
     .gallery-wrap__lists
