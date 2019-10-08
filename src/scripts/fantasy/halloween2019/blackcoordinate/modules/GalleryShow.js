@@ -11,7 +11,7 @@ export default class GalleryShow {
       $(function() {
         $('._showmore').each(function() {
           $(this)
-            .find('li:gt(5)')
+            .find('li:gt(8)')
             .each(function() {
               $(this).hide()
             })
